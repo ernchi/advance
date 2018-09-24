@@ -73,15 +73,6 @@ li a {
      background:#DDD;
 }
 
-.btn-group label, .btn-group input {
-    display:block;
-    /*position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;*/
-}
-
 .btn-group input[type="radio"]:checked + label,
 .Checked + label {
     background:yellow;
