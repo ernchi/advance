@@ -1,0 +1,396 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"for\tFor Loop"
+			],
+			[
+				"ar",
+				"arrays"
+			],
+			[
+				"arr",
+				"arrays"
+			],
+			[
+				"num",
+				"number_arrays"
+			],
+			[
+				"scan",
+				"scan_array_lengths"
+			],
+			[
+				"n",
+				"n_arrays"
+			],
+			[
+				"ad",
+				"adj_list"
+			],
+			[
+				"min",
+				"min_cap"
+			],
+			[
+				"fl",
+				"flow"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"flow",
+				"flow_left"
+			],
+			[
+				"l",
+				"flow_left"
+			],
+			[
+				"f",
+				"forwardEdges"
+			],
+			[
+				"e",
+				"edges"
+			],
+			[
+				"goa",
+				"goal2"
+			],
+			[
+				"brak",
+				"brakStr"
+			],
+			[
+				"b",
+				"brakStr"
+			],
+			[
+				"pla",
+				"playAgain"
+			],
+			[
+				"you",
+				"yourChoice"
+			],
+			[
+				"choice",
+				"choicesToStr"
+			],
+			[
+				"R",
+				"Rock"
+			],
+			[
+				"P",
+				"Paper"
+			],
+			[
+				"ch",
+				"choiceStr"
+			],
+			[
+				"robo",
+				"roboChoice"
+			],
+			[
+				"t",
+				"typed"
+			],
+			[
+				"d",
+				"digitsAfterDecimal"
+			],
+			[
+				"ne",
+				"nextChar"
+			],
+			[
+				"de",
+				"denominator"
+			],
+			[
+				"bes",
+				"bestNumerator"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/acmclub/MinimumCut/cut.cpp",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/acmclub/CardTrick/trick.cpp",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/acmclub/cluckynumber/cluckynumber.cpp",
+		"/C/Users/7Alex/Code/cse2421/lab1/LAB1README",
+		"/C/Users/7Alex/git/advance/index.css",
+		"/C/Users/7Alex/git/advance/index.html",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/kattis/brackets/brackets.cpp",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/kattis/brakets.cpp",
+		"/C/Users/7Alex/Code/cse2421/lab1/lab1p1.c",
+		"/C/Users/7Alex/AppData/Local/Packages/microsoft.windowscommunicationsapps_8wekyb3d8bbwe/LocalState/Files/S0/6612/Math Template[6803].tex",
+		"/C/Users/7Alex/Code/cse2421/lab1/lab1p2.c",
+		"/C/Users/7Alex/Downloads/Resume.pdf",
+		"/C/Users/7Alex/Code/cse2421/lab1/lab1p1",
+		"/C/Users/7Alex/Code/cse2421/lab1p1.c",
+		"/C/Users/7Alex/Code/wow.c",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/acmclub/cppcountless/CppCountLess.cpp",
+		"/C/Users/7Alex/react_native/AwesomeProject/App.js",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/codeforces/CppMinimumValueRectangle/CppMinValRect.cpp",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/codeforces/CppMinimumValueRectangle/MinValRec.exe",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/codeforces/CppMinimumValueRectangle/MinValRec.cppdir",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/codeforces/CppMinimumValueRectangle/MinValRec.cpp",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/cppcountless/cppcountless",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/coutless.cpp",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/kattis/cppr2/r2.cpp",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/cppr2/r2.cpp",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/r2.cpp",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/cppaplusb/aplusb.cpp",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/cpphello/hello.cpp",
+		"/C/Users/7Alex/IdeaProjects/ProgrammingContests/ProgrammingContests/src/hello.cpp",
+		"/C/Users/7Alex/hello.cpp",
+		"/C/Users/7Alex/Desktop/hello.cpp",
+		"/C/Users/7Alex/AppData/Roaming/Sublime Text 3/Packages/MinGW-w64.sublime-build",
+		"/C/Users/7Alex/Desktop/hello.exe",
+		"/C/Users/7Alex/Desktop/icpc2018data/A-catch/secret-12-linear.in",
+		"/C/Users/7Alex/Desktop/icpc2018data/A-catch/secret-12-linear.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/LastName_FirstName_Quiz_4.py",
+		"/C/Users/7Alex/C4C/advance/advance/app/views/home/index.html.erb",
+		"/C/Users/7Alex/PyScripts/MegeSort",
+		"/C/Users/7Alex/C4C/advance/advance/app/views/layouts/application.html.erb",
+		"/C/Users/7Alex/Desktop/attachments/mountains/examples/01.in",
+		"/C/Users/7Alex/Desktop/2221Grading/Script/dzip.rb",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/data/secret/09.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/data/secret/09.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/data/secret/05.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/submissions/accepted/apoly3.cpp",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/data/secret/03.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/data/secret/03.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/data/secret/02.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/data/secret/02.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/data/secret/04.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/data/secret/04.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/008.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/008.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/problem_statement/problem.tex",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/004.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/004.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/data/sample/1.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_abstractart.zip/abstractart/data/sample/1.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/submissions/accepted/johnQuestion.cpp",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/007.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/007.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/005.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/005.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/006.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/006.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/submissions/accepted/ingestionsean.cpp",
+		"/C/MinGW/msys/1.0/etc/fstab",
+		"/C/Users/7Alex/Sublime C++/test.cpp",
+		"/C/Users/7Alex/PyScripts/AdventDay1.py",
+		"/C/Users/7Alex/PyScripts/test.cpp",
+		"/C/Users/7Alex/C4C/firstProject/app/views/articles/new.html.erb",
+		"/C/Users/7Alex/C4C/firstProject/db/migrate/20171121022226_create_articles.rb",
+		"/C/Users/7Alex/C4C/advance/advance/config/routes.rb",
+		"/C/Users/7Alex/C4C/firstProject/app/controllers/articles_controller.rb",
+		"/C/Users/7Alex/C4C/firstProject/app/controllers/application_controller.rb",
+		"/C/Users/7Alex/C4C/firstProject/config/routes.rb",
+		"/C/Users/7Alex/C4C/firstProject/app/views/welcome/index.html.erb",
+		"/C/Users/7Alex/C4C/firstProject/Gemfile",
+		"/C/Users/7Alex/Desktop/Print/New Rich Text Document.rtf",
+		"/C/Users/7Alex/Downloads/caesersCyber",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_isahasa.zip/isahasa/submissions/accepted/johnIsa.cpp",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/003.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/002.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/001.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_ingestion.zip/ingestion/data/secret/003.in",
+		"/C/Users/7Alex/Downloads/caesersCyber (1)",
+		"/C/Users/7Alex/Downloads/REasy",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/015.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_key.zip/key/data/secret/014.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/015.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/014.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/010.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/011.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/011.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/010.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/014.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/016.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/016.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/005.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/005.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/003.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_lost.zip/lost/data/secret/003.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_key.zip/key/data/secret/002.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_key.zip/key/data/secret/003.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_grille.zip/grille/problem_statement/problem.tex",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_squawk.zip/squawk/submissions/accepted/squawk1.cpp",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_squawk (1).zip/squawk/data/secret/018.ans",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_squawk (1).zip/squawk/data/secret/018.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_squawk.zip/squawk/data/secret/018.in",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_deletethis-corrected.zip/deletethis/submissions/accepted/delete1.cpp",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_solarly.zip/solarly/submissions/accepted/sean1.cpp",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_solarly.zip/solarly/submissions/time_limit_exceeded/brutesolar1.cpp",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_bottledup.zip/bottledup/submissions/accepted/bottle1.cpp",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_solarly.zip/solarly/problem_statement/problem.tex",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_shuffling.zip/shuffling/submissions/accepted/shuffle1.cpp",
+		"/C/Users/7Alex/AppData/Local/Temp/Temp1_shuffling.zip/shuffling/submissions/accepted/sshuffle1.cpp"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 165.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
