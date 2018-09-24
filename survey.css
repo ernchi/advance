@@ -51,3 +51,38 @@ li a {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+
+.btn-group {
+     list-style-type:none;
+     margin:25px 0 0 0;
+     padding:0;
+}
+
+.btn-group input[type="radio"] {
+    opacity:0.01;
+}
+
+.btn-group label {
+     padding:5px;
+     border:1px solid #CCC; 
+     cursor: pointer;
+}
+
+.btn-group label:hover {
+     background:#DDD;
+}
+
+.btn-group label, .btn-group input {
+    display:block;
+    /*position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;*/
+}
+
+.btn-group input[type="radio"]:checked + label,
+.Checked + label {
+    background:yellow;
+}
