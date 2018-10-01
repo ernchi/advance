@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-/*Navigation bar CSS*/
+/*Navigation bar*/
 .menu li {
   list-style-type: none;
   margin: 0;
@@ -10,18 +10,23 @@
   overflow: hidden;
   text-align: center;
   background-color: #6ebbab;
-  font-size: 20px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 li a {
+  font-size: 20px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: white;
   text-decoration: none;
 }
 
-li a:hover {
+li:hover {
   background-color: #A0DACF;
+  color: white;
   text-decoration: none;
+}
+
+.menu .col-3:hover {
+  background-color: #A0DACF;
 }
 
 /*Survey questions*/
