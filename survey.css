@@ -12,11 +12,10 @@
   background-color: #6EBBAB;
 }
 
-li a {
+.menu li a {
   font-size: 20px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: white;
-  text-decoration: none;
 }
 
 li:hover {
@@ -35,11 +34,6 @@ li:hover {
     clear: both;
     display: table;
 }
-
-.material-icons.mwc-button {
-  font-family:var(--mdc-icon-font, "Material Icons");font-weight:normal;font-style:normal;font-size:var(--mdc-icon-size, 24px);line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased
-}
-
 .header {
     background-color: #339911;
     color: #ffffff;
@@ -53,6 +47,7 @@ li:hover {
 }
 
 .col-1 {width: 8.33%;}
+.col-1_5 {width: 12.5%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
@@ -65,27 +60,39 @@ li:hover {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+.questions {
+    height: 70px;
+}
 .btn-group {
-     list-style-type:none;
-     margin:25px 0 0 0;
-     padding:0;
+    position: relative;
+    appearance: button;
+    list-style-type:none;
+    margin-top: 0px
+    /*margin:25px 0 0 0;*/
 }
 
 .btn-group input[type="radio"] {
-    opacity:0.01;
+    opacity: 1;
+    width: 100px;
+    height: 0px;
 }
 
 .btn-group label {
-     padding:5px;
-     border:1px solid #CCC;
-     cursor: pointer;
+    padding-right: 30px;
+    padding: 10px;
+    border: 1px solid #CCC;
+    cursor: pointer;
 }
 
 .btn-group label:hover {
      background:#DDD;
+     align-self: end;
 }
 
 .btn-group input[type="radio"]:checked + label,
 .Checked + label {
-    background:yellow;
+    text-align: center;
+    background: lightblue;
+}
+
 }
