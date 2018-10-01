@@ -6,17 +6,25 @@
 .menu li {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px 10px;
+  overflow: hidden;
   text-align: center;
   background-color: #6ebbab;
+  font-size: 20px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-li a:hover {
-  color: #2a8472;
-  padding: 14px 16px;
+li a {
+  color: white;
   text-decoration: none;
 }
 
+li a:hover {
+  background-color: #A0DACF;
+  text-decoration: none;
+}
+
+/*Survey questions*/
 .row::after {
     content: "";
     clear: both;
@@ -35,8 +43,8 @@ li a:hover {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
-    border: 1px solid blue;
+    /*padding: 15px;*/
+    /*border: 1px solid black;*/
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
