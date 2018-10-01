@@ -1,6 +1,22 @@
 * {
     box-sizing: border-box;
 }
+
+/*Navigation bar CSS*/
+.menu li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #6ebbab;
+}
+
+li a:hover {
+  color: #2a8472;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .row::after {
     content: "";
     clear: both;
@@ -15,23 +31,6 @@
     background-color: #339911;
     color: #ffffff;
     padding: 15px;
-}
-
-li {
-    /*float: right;
-    padding: 8px 50px;*/
-    text-decoration: none;
-    text-align: center;
-    /*background-color: #2756b1;*/
-    color: white;
-    border-bottom: solid transparent;
-    /*padding-right: 30px;
-    border-bottom: 1px solid #555;*/
-}
-
-li a {
-    color: #000;
-    text-decoration: none;
 }
 
 [class*="col-"] {
@@ -52,7 +51,6 @@ li a {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-
 .btn-group {
      list-style-type:none;
      margin:25px 0 0 0;
@@ -65,21 +63,12 @@ li a {
 
 .btn-group label {
      padding:5px;
-     border:1px solid #CCC; 
+     border:1px solid #CCC;
      cursor: pointer;
 }
 
 .btn-group label:hover {
      background:#DDD;
-}
-
-.btn-group label, .btn-group input {
-    display:block;
-    /*position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;*/
 }
 
 .btn-group input[type="radio"]:checked + label,
