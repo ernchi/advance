@@ -43,8 +43,8 @@ li:hover {
 
 [class*="col-"] {
     float: left;
-    /*padding: 15px;*/
-    /*border: 1px solid black;*/
+    /*padding: 15px;
+    border: 1px solid black;*/
 }
 
 .col-1 {width: 8.33%;}
@@ -68,18 +68,19 @@ li:hover {
     position: relative;
     appearance: button;
     list-style-type:none;
-    margin-top: 0px
-    /*margin:25px 0 0 0;*/
+    margin-top: 0px;
+    margin:25px 0 0 0;
 }
 
 .btn-group input[type="radio"] {
     opacity: 1;
-    width: 100px;
+    display: none;
+
+    width: 70px;
     height: 0px;
 }
 
 .btn-group label {
-    padding-right: 30px;
     padding: 10px;
     border: 1px solid #CCC;
     cursor: pointer;
