@@ -9,7 +9,7 @@
   padding: 10px 10px;
   overflow: hidden;
   text-align: center;
-  background-color: #6ebbab;
+  background-color: #6EBBAB;
 }
 
 .menu li a {
@@ -24,7 +24,7 @@ li:hover {
   text-decoration: none;
 }
 
-.menu .col-3:hover {
+.menu .active{
   background-color: #A0DACF;
 }
 
@@ -45,6 +45,7 @@ li:hover {
     /*padding: 15px;
     border: 1px solid black;*/
 }
+
 .col-1 {width: 8.33%;}
 .col-1_5 {width: 12.5%;}
 .col-2 {width: 16.66%;}
