@@ -1,0 +1,11 @@
+  .button {
+        font-family: Verdana, Arial, sans-serif;
+        display: inline-block;
+        background: #459300 url('../images/orange_bg.jpg') top left repeat-x;
+        border: 1px solid #459300 ;
+        padding: 5px 7px 5px 7px;
+        color: #fff;
+        font-size: 12px;
+        cursor: pointer;
+  }
+
