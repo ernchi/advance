@@ -16,6 +16,7 @@
   font-size: 20px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: white;
+  text-decoration: none;
 }
 
 li:hover {
