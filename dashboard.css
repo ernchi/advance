@@ -7,7 +7,7 @@
     }
 
     /*Altering the text in the navigation bar*/
-    .navbar li a {
+    .navbar .nav li a {
       font-size: 20px;
       font-family: "Trebuchet MS", Helvetica, sans-serif;
       color: white;
@@ -20,6 +20,7 @@
       color: white;
       text-decoration: none;
     }
+
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
