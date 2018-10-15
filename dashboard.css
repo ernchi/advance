@@ -1,4 +1,4 @@
-/* Remove the navbar's default margin-bottom and rounded borders */
+    /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
@@ -69,6 +69,34 @@
     .wellBeingArticles h2 {
 
       text-align: left;
+    }
+
+
+    .lifeSkillsArticles h2 {
+
+      text-align: left;
+    }
+
+    .lifeSkillsArticles {
+
+      width: 100%;
+      border: 2px solid #6ebbab;
+      padding: 2em;
+
+
+    }
+
+
+    .wellBeingArticles span {
+
+      font-weight: lighter;
+
+    }
+
+    .lifeSkillsArticles span {
+
+      font-weight: lighter;
+
     }
 
     .boxes {
