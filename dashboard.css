@@ -21,6 +21,17 @@
       text-decoration: none;
     }
 
+    /*Styling for the navbar toggle*/
+    .navbar-toggle {
+      border: 1px solid white;
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    #myNavBar: hover, #myNavBar.is-active {
+      background-color: white;
+    }
+
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
