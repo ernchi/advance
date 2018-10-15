@@ -32,6 +32,11 @@
       height: 100%;
     }
 
+    /*Adjusts the width of the main body of the webpage*/
+    .col-sm-8 {
+      width: 100%;
+    }
+
     /* Set black background color, white text and some padding */
     footer {
       background-color: #6EBBAB;
