@@ -78,6 +78,8 @@
       width: 100%;
       border: 2px solid #6ebbab;
       padding: 2em;
+      margin-bottom: 5%;
+      color: #57998b;
 
 
     }
@@ -98,6 +100,8 @@
       width: 100%;
       border: 2px solid #6ebbab;
       padding: 2em;
+      margin-bottom: 5%;
+      color: #57998b;
 
 
     }
@@ -106,6 +110,7 @@
     .wellBeingArticles span {
 
       font-weight: lighter;
+      color: black;
 
     }
 
@@ -115,12 +120,69 @@
 
     }
 
-    .boxes {
+    .box1, .box2, .box3 {
     width: 29%;
     height: 180px;
     border: 2px solid #6ebbab;
     margin: 8px 10px;
     display: inline-block;
+    }
+
+    .wellBeingArticles .box1 button{
+      visibility: hidden;
+
+    }
+
+    .wellBeingArticles .box2 button{
+      visibility: hidden;
+
+    }
+
+    .wellBeingArticles .box3 button{
+      visibility: hidden;
+
+    }
+
+    .wellBeingArticles .box1:hover button{
+      visibility: visible;
+
+    }
+
+    .wellBeingArticles .box2:hover button{
+      visibility: visible;
+    }
+
+    .wellBeingArticles .box3:hover button{
+      visibility: visible;
+    }
+
+
+    .lifeSkillsArticles .box1 button{
+      visibility: hidden;
+
+    }
+
+    .lifeSkillsArticles .box2 button{
+      visibility: hidden;
+
+    }
+
+    .lifeSkillsArticles .box3 button{
+      visibility: hidden;
+
+    }
+
+    .lifeSkillsArticles .box1:hover button{
+      visibility: visible;
+
+    }
+
+    .lifeSkillsArticles .box2:hover button{
+      visibility: visible;
+    }
+
+    .lifeSkillsArticles .box3:hover button{
+      visibility: visible;
     }
 
 
