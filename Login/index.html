@@ -4,27 +4,54 @@
     <link rel="stylesheet" href="style.css"> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
- 
+    <title>MindUp!</title>
+    <h2>
+        <img src="holder.png" width="300" height="200" class="center">
+    </h2>
 <style>
-body {background: linear-gradient(#7DCBAA,white);}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body {background: linear-gradient(#7DCBAA,white);
+      background-repeat: no-repeat;
+      background-size: cover;
+      img {
+        border-radius: 8px;
+      }
+      }
 .box {
   background-color: #145238;
   border: 1px solid black;
   width: 400px;
   height: 250px ;
-  margin: 17%;
-  margin-left: 35%
-
+  margin: 0%;
+  margin-left: 35%;
+  margin-right: 35%;
 }
+
+.footer{
+  position: fixed;
+  left: 0;
+  height: 20%;
+  bottom: 0;
+  width: 100%;
+  background-color: #129859;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
 
 .button {
         font-family: Verdana, Arial, sans-serif;
         display: inline-block;
-        background: #7DCBAA url('../images/orange_bg.jpg') top left repeat-x;
+        background: #129859 url('../images/orange_bg.jpg') top left repeat-x;
         border: 1px solid #459300 ;
         padding: 5px 7px 5px 7px;
-        color: black;
+        color: white;
         font-size: 20px;
         cursor: pointer;
         margin-top: 40px;
@@ -39,15 +66,16 @@ body{
     overflow: hidden;
     }
 </style>
+
  <div class="box">
   <form>
-    <center><font color="white">
+    <center><font color="white" face="courier">
   Username:</font><br>
   <div>
-  <input type="text" name="name" size="40"
-  ><br><font color="white">
+  <input type="text" name="name" size="40" style="height:30px; font-size:20px">
+  <br><font color="white" face="courier" size="">
   Password:</font><br>
-  <input type="password" name="password" size="40">
+  <input type="password" name="password" size="40" style="height:30px; font-size:20px">
   </div>
   <br />
   <br />
@@ -57,10 +85,15 @@ body{
   </center>
   </form>
  </div>
+ <div class="footer">
+   <p>MindUp!   </p>
+  <p >
+    Let us help! Take a survey and we’ll suggest some resources to help you, personalized for you specifically. 
+  </p>
+ </div>
   </head>
 
     <script src="script.js"></script>
   <body>
-  
-    </body>
+  </body>
 </html>
