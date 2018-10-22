@@ -4,6 +4,9 @@
       border-radius: 0;
       background-color: #6EBBAB;
       border: 0px;
+      width: 100%;
+      position: fixed;
+      z-index: 1000;
     }
 
     /*Altering the text in the navigation bar*/
@@ -48,6 +51,7 @@
     /*Adjusts the width of the main body of the webpage*/
     .col-sm-8 {
       width: 100%;
+      margin-top:5%;
     }
 
     /* Set black background color, white text and some padding */
@@ -131,61 +135,187 @@
     display: inline-block;
     }
 
+    .wellBeingArticles h3{
+      margin-right: 100%;
+    }
+    .wellBeingArticles p{
+      margin-left: 90%;
+      font-size: 12px;
+    }
+
+    .lifeSkillsArticles h3{
+      margin-right: 100%;
+    }
+
+    .lifeSkillsArticles p{
+      margin-left: 90%;
+      font-size: 12px;
+    }
+
     .wellBeingArticles .box1 button{
-      visibility: hidden;
+      visibility: visible;
+      width: 100%;
+      background-color: #999999;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+
 
     }
 
     .wellBeingArticles .box2 button{
-      visibility: hidden;
+      visibility: visible;
+      width: 100%;
+      background-color: #999999;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
 
     }
 
     .wellBeingArticles .box3 button{
-      visibility: hidden;
+      visibility: visible;
+      width: 100%;
+      background-color: #999999;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
 
     }
 
     .wellBeingArticles .box1:hover button{
       visibility: visible;
-
+      width: 100%;
+      background-color: #6ebbab;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
     }
+
 
     .wellBeingArticles .box2:hover button{
       visibility: visible;
+      width: 100%;
+      background-color: #6ebbab;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
     }
 
     .wellBeingArticles .box3:hover button{
       visibility: visible;
+      width: 100%;
+      background-color: #6ebbab;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
     }
 
 
     .lifeSkillsArticles .box1 button{
-      visibility: hidden;
+      visibility: visible;
+      width: 100%;
+      background-color: #999999;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
 
     }
 
     .lifeSkillsArticles .box2 button{
-      visibility: hidden;
+      visibility: visible;
+      width: 100%;
+      background-color: #999999;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
 
     }
 
     .lifeSkillsArticles .box3 button{
-      visibility: hidden;
+      visibility: visible;
+      width: 100%;
+      background-color: #999999;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
 
     }
 
     .lifeSkillsArticles .box1:hover button{
       visibility: visible;
+      width: 100%;
+      background-color: #6ebbab;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
 
     }
 
     .lifeSkillsArticles .box2:hover button{
       visibility: visible;
+      width: 100%;
+      background-color: #6ebbab;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
     }
 
     .lifeSkillsArticles .box3:hover button{
       visibility: visible;
+      width: 100%;
+      background-color: #6ebbab;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
     }
 
 
