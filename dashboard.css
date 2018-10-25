@@ -58,21 +58,31 @@
     }
 
     .surveyBlock {
-      background-image: url("cat.jpg");
-      border: 5px solid #6ebbab;
+      background-image: url("survey_bg.jpg");
+      border: 10px solid #6ebbab;
       width: 100%;
-      height: 15em;
+      height: 25em;
       text-align: left;
       padding-left: 2em;
       margin-bottom: 3em;
-
-
     }
 
     .surveyBlock button {
       position: relative;
       transition: .5s ease;
+    }
 
+    .surveyBlock h3 {
+      color: white;
+      font-size: 60px;
+      letter-spacing: 5px;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+
+    .surveyBlock p {
+      color: white;
+      font-size: 24px;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
     }
 
     .wellBeingArticles {
