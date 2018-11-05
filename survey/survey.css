@@ -1,98 +1,144 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/*Navigation bar*/
-.menu li {
-  list-style-type: none;
-  margin: 0;
-  padding: 10px 10px;
-  overflow: hidden;
-  text-align: center;
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
   background-color: #6EBBAB;
+  border: 0px;
 }
 
-.menu li a {
+/*Altering the text in the navigation bar*/
+.navbar .nav li a {
   font-size: 20px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: white;
   text-decoration: none;
 }
 
+/*Styling when hovering over the options in the menu*/
 li:hover {
   background-color: #A0DACF;
   color: white;
   text-decoration: none;
 }
 
-.menu .active{
+/*Styling for the navbar toggle*/
+.navbar-toggle {
+  border: 0;
+  background-color: transparent;
+}
+
+#nav:hover {
   background-color: #A0DACF;
+}
+
+#nav:focus {
+  background: transparent;
+}
+
+/*Header of survey questions*/
+.survey-header h1 {
+  font-size: 60px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #6EBBAB;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*Description of the survey*/
+.survey-description {
+  padding-left: 50px;
+  font-size:24px;
 }
 
 /*Survey questions*/
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
-.header {
-    background-color: #339911;
-    color: #ffffff;
-    padding: 15px;
+.questions header {
+  background-color: #339911;
+  color: #ffffff;
+  padding: 15px;
 }
 
 [class*="col-"] {
-    float: left;
+  float: left;
     /*padding: 15px;
     border: 1px solid black;*/
-}
+  }
 
-.col-1 {width: 8.33%;}
-.col-1_5 {width: 12.5%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+  .col-1 {width: 8.33%;}
+  .col-1_5 {width: 12.5%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 
-.questions {
+  .questions {
     height: 70px;
-}
-.btn-group {
+  }
+  .response-btn {
     position: relative;
     appearance: button;
     list-style-type:none;
     margin-top: 0px;
     margin: 25px 0 0 0;
-}
+  }
 
-.btn-group input[type="radio"] {
+  .response-btn input[type="radio"] {
     display: none;
-}
+  }
 
-.btn-group label {
+  .response-btn label {
     padding: 10px;
     border: 1px solid #CCC;
     cursor: pointer;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .response-btn label:hover {
+   background:#DDD;
+   align-self: end;
+ }
+
+ .response-btn input[type="radio"]:checked + label,
+ .Checked + label {
+  text-align: center;
+  background: lightblue;
+}
+.response-btn {
+  flex-flow: row wrap;
+  overflow: hidden;
+  position: relative;
 }
 
-.btn-group label:hover {
-     background:#DDD;
-     align-self: end;
+.response-btn div {
+  height: 120px;
+  padding: 10px;
+  border-bottom: 1px solid black;
 }
 
-.btn-group input[type="radio"]:checked + label,
-.Checked + label {
-    text-align: center;
-    background: lightblue;
+.response-btn::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  /*background-color: #FFF; Make this white. */
 }
-
 }

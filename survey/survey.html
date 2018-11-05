@@ -4,22 +4,48 @@
   <title>Survey</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="survey.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="survey.css" rel="stylesheet" type="text/css"/>
+  <!--Jquery from google-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="survey.js"></script>
 </head>
 <body>
-  <div class="row">
-	    <div class="menu">
-	    	<div class="col-3"><li><a href="default.asp">HOME</a></li></div>
-	  		<div class="col-3"><li><a href="default.asp">SURVEY</a></li></div>
-	  		<div class="col-3"><li><a href="default.asp">SOS</a></li></div>
-	  		<div class="col-3"><li><a href="default.asp">ACCOUNT</a></li></div>
-		</div>
-	</div>
- 	
-  <div class="row">
-  		<div class="col-12">Patient Health Survey</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="nav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">Survey</a></li>
+        <li><a href="contact.asp">SOS</a></li>
+        <li><a href="about.asp">Account</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="btn-group">
+</nav>
+ 	<div questions>
+  <div class="row">
+    <div class="survey-header">
+      <h1>
+        Survey Title
+      </h1>
+    </div>
+    <div class="survey-description">
+        This is the description of the survey, this is very descriptive. 
+    </div>
+  </div>
+<div class="response-btn">
   <div class="questions">
     <div class="col-1"></div>
     <div class="col-6">Q1 What's your favorite color</div>
@@ -30,21 +56,10 @@
     <div class="col-1"></div>
   </div>
 </div>
-<div class="btn-group">
+<div class="response-btn">
   <div class="questions">
     <div class="col-1"></div>
-    <div class="col-6">Q2 On a scale of 1 to 4, rate how depressed you are. If you are very depressed and want to kill yourself, pick 1. If your level of depression is higher than that, then pick a higher number.</div>
-    <div class="col-1"><input type="radio" id="btn12" name="Q2"><label for="btn12">1</label></div>
-    <div class="col-1"><input type="radio" id="btn22" name="Q2"><label for="btn22">2</label></div>
-    <div class="col-1"><input type="radio" id="btn32" name="Q2"><label for="btn32">3</label></div>
-    <div class="col-1"><input type="radio" id="btn42" name="Q2"><label for="btn42">4</label></div>
-    <div class="col-1"></div>
-  </div>
-</div>
-<div class="btn-group">
-  <div class="questions">
-    <div class="col-1"></div>
-    <div class="col-6">Q3 This question is great.</div>
+    <div class="col-6">Q2 This question is great.</div>
     <div class="col-1"><input type="radio" id="btn13" name="Q3"><label for="btn13">1</label></div>
     <div class="col-1"><input type="radio" id="btn23" name="Q3"><label for="btn23">2</label></div>
     <div class="col-1"><input type="radio" id="btn33" name="Q3"><label for="btn33">3</label></div>
@@ -52,16 +67,17 @@
     <div class="col-1"></div>
   </div>
 </div>
-<div class="btn-group">
+<div class="response-btn">
   <div class="questions">
     <div class="col-1"></div>
-    <div class="col-6">Q4 How are you?</div>
+    <div class="col-6">Q3 How are you?</div>
     <div class="col-1"><input type="radio" id="btn14" name="Q4"><label for="btn14">1</label></div>
     <div class="col-1"><input type="radio" id="btn24" name="Q4"><label for="btn24">2</label></div>
     <div class="col-1"><input type="radio" id="btn34" name="Q4"><label for="btn34">3</label></div>
     <div class="col-1"><input type="radio" id="btn44" name="Q4"><label for="btn44">4</label></div>
     <div class="col-1"></div>
   </div>
+</div>
 </div>
 </body>
 </html>
