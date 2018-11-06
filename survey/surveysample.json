@@ -1,0 +1,92 @@
+{
+    "survey": [
+        {
+            "options": [
+                {
+                    "option_id": 1,
+                    "texts": "Not at all",
+                    "weights": 1
+                },
+                {
+                    "option_id": 1,
+                    "texts": "Several days ",
+                    "weights": 3
+                },
+                {
+                    "option_id": 1,
+                    "texts": "More than half the days",
+                    "weights": 4
+                },
+                {
+                    "option_id": 1,
+                    "texts": "Nearly every day",
+                    "weights": 5
+                }
+            ],
+            "questions": [
+                {
+                    "id": 1,
+                    "category": 3,
+                    "QuestionWeight": 4,
+                    "QuestionName": "Little interest or pleasure in doing things",
+                    "response": -1
+                },
+                {
+                    "id": 2,
+                    "category": 3,
+                    "QuestionWeight": 2,
+                    "QuestionName": "Feeling down, depressed, or hopeless"
+                },
+                {
+                    "id": 3,
+                    "category": 1,
+                    "QuestionWeight": 1,
+                    "QuestionName": "Trouble falling or staying asleep, or sleeping too much ",
+                    "response": -1
+                },
+                {
+                    "id": 4,
+                    "category": 5,
+                    "QuestionWeight": 9,
+                    "QuestionName": "Feeling tired or having little energy",
+                    "response": -1
+                },
+                {
+                    "id": 5,
+                    "category": 2,
+                    "QuestionWeight": 4,
+                    "QuestionName": "Poor appetite or overeating ",
+                    "response": -1
+                },
+                {
+                    "id": 6,
+                    "category": 3,
+                    "QuestionWeight": 7,
+                    "QuestionName": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down ",
+                    "response": -1
+                },
+                {
+                    "id": 7,
+                    "category": 5,
+                    "QuestionWeight": 3,
+                    "QuestionName": "Trouble concentrating on things, such as reading the newspaper or watching television",
+                    "response": -1
+                },
+                {
+                    "id": 8,
+                    "category": 1,
+                    "QuestionWeight": 4,
+                    "QuestionName": " Moving or speaking so slowly that other people could have noticed?  Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
+                    "response": -1
+                },
+                {
+                    "id": 9,
+                    "category": 2,
+                    "QuestionWeight": 8,
+                    "QuestionName": "Thoughts that you would be better off dead or of hurting yourself in some way ",
+                    "response": -1
+                }
+            ]
+        }
+    ]
+}
