@@ -54,6 +54,20 @@ li:hover {
   font-size:24px;
 }
 
+/*Styling for the options bar*/
+.options {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #6EBBAB;
+  /*font color*/
+  color: white;
+}
+
+.options .col-1 {
+  width: 8%;
+}
+
 /*Survey questions*/
 .row::after {
   content: "";

@@ -57,11 +57,12 @@
       padding: 15px;
     }
 
+    /*Styling for survey block*/
     .surveyBlock {
       background-image: url("survey_bg.jpg");
       border: 10px solid #6ebbab;
       width: 100%;
-      height: 25em;
+      height: 30em;
       text-align: left;
       padding-left: 2em;
       margin-bottom: 3em;
@@ -75,7 +76,7 @@
     .surveyBlock h3 {
       color: white;
       font-size: 60px;
-      letter-spacing: 5px;
+      letter-spacing: 4px;
       font-family: "Trebuchet MS", Helvetica, sans-serif;
     }
 
