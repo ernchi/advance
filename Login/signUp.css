@@ -104,7 +104,9 @@ nav.horizontal ul li {
 
 /* horizontal menu */
 img {
-  max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
 }
 
 /*-- end reset --*/
@@ -148,7 +150,7 @@ h1 {
 
 input[type="text"], input[type="email"], input[type="password"] {
   font-size: 0.9em;
-  color: #fff;
+  color: black;
   font-weight: 100;
   width: 94.5%;
   display: block;
@@ -162,7 +164,6 @@ input[type="text"], input[type="email"], input[type="password"] {
   background-position: -800px 0;
   background-size: 100%;
   background-repeat: no-repeat;
-  color: #fff;
   font-family: 'Roboto', sans-serif;
 }
 
