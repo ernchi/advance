@@ -37,8 +37,9 @@ $( document ).ready(function() {
 });
 
 //https://www.w3schools.com/jquery/jquery_ajax_get_post.asp
-$( document ).ready(function() {	
+$(document).ready(function() {	
 	survey = jsonobj["survey"];
+	var curQuestionNum = 1;
 	for (var questionGroup of survey){
 		questions = [];
 		options = [];
@@ -48,8 +49,9 @@ $( document ).ready(function() {
 		for(var question of questionGroup["questions"]){
 			questions.push(question["QuestionName"]);
 		}
-		for(var i = 1; i <= questions.length; i++){
-			$(".questions").append(genQuestionHtml(questions[i-1],i));
+		for(var i = 0; i < questions.length; i++){
+			$(".questions").append(genQuestionHtml(questions[i], curQuestionNum));
+			curQuestionNum += 1;
 		}
 	}
 });
@@ -140,6 +142,52 @@ jsonobj = {
 			"category": 2,
 			"QuestionWeight": 8,
 			"QuestionName": "Thoughts that you would be better off dead or of hurting yourself in some way ",
+			"response": -1
+		}
+		]
+	},
+	{
+		"options": [
+		{
+			"option_id": 1,
+			"texts": "SO BAD",
+			"weights": 1
+		},
+		{
+			"option_id": 1,
+			"texts": "OK",
+			"weights": 3
+		},
+		{
+			"option_id": 1,
+			"texts": "GOOD",
+			"weights": 4
+		},
+		{
+			"option_id": 1,
+			"texts": "GRRRREAT!",
+			"weights": 5
+		}
+		],
+		"questions": [
+		{
+			"id": 1000000,
+			"category": 3,
+			"QuestionWeight": 4,
+			"QuestionName": "How you feel?",
+			"response": -1
+		},
+		{
+			"id": 1000001,
+			"category": 3,
+			"QuestionWeight": 2,
+			"QuestionName": "How you mom feel?"
+		},
+		{
+			"id": 1000002,
+			"category": 1,
+			"QuestionWeight": 1,
+			"QuestionName": "How you father feel?",
 			"response": -1
 		}
 		]
