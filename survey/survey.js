@@ -4,7 +4,8 @@ function genQuestionHtml(question, num){
 	str = str.concat("  <div class=\"col-1\"></div>\r\n");
 	str = str.concat("  <div class=\"col-6\">Q" + num + ". " + question + "</div>\r\n");
 	for (var i = 1; i <= 4; i++) {
-		var name = "btn" + i + num;
+		var name = "btn" + i + "_" + num;
+		// add value tag
 		str = str.concat("  <div class=\"col-1\"><input type=\"radio\" id=\"" + name);
 		str = str.concat("\" name=\"Q" + num + "\"><label for=\"" + name + "\">" + i + "</label></div>\r\n");
 	}
@@ -20,8 +21,6 @@ function genOptions(options){
 	str = str.concat("</p></div>");
 	return str;
 }
-
-
 
 //https://www.w3schools.com/jquery/jquery_ajax_get_post.asp
 // Generates all the questions with the appropriate options bar
@@ -52,6 +51,27 @@ $(document).ready(function() {
 			curQuestionNum += 1;
 		}
 	}
+});
+
+$(function(){
+	$("#submit_btn").click(function(){
+		var curQuestionNum = 1;
+		var noAns = 0;
+		for(var questionGroup of survey){
+			for(var question of questionGroup["questions"]){
+				var resp = -1;
+				if($('input[name=Q' + curQuestionNum +  ']:checked').length==1){
+					resp = $('input[name=Q' + curQuestionNum + ']:checked')[0].id[3]
+				}
+				curQuestionNum++;
+				if(resp==-1){
+					noAns++;
+				}
+				question["response"] = resp;
+			}
+		}
+		alert("submitted! You did not answer " + noAns + " questions");
+	});
 });
 
 jsonobj = {
