@@ -15,40 +15,37 @@ function genQuestionHtml(question, num){
 
 // Generates options bar
 function genOptions(options){
-	var str = "    <div class=\"col-1\"><p>";
+	var str = "<div class=\"options\">\r\n"
+	str = str.concat("    <div class=\"col-1\"><p>");
 	str = str.concat(options);
 	str = str.concat("</p></div>");
 	return str;
 }
 
-$( document ).ready(function() {
-	$.get("https://codeforces.com/api/contest.ratingChanges?contestId=1074", function(data, status){
 
-    });
-
-	options = ["Not at all", "Several days", "More than half the days", "Nearly every day"];
-	$(".options").append("<div class=\"col-7\"></div>");
-	for(var i = 0; i < options.length; i++){
-		$(".options").append(genOptions(options[i]));
-	}
-	$(".options").append("<div class=\"col-1\"></div>");
-
-	$.get("https://codeforces.com/api/contest.ratingChanges?contestId=1074", function(data, status){});
-});
 
 //https://www.w3schools.com/jquery/jquery_ajax_get_post.asp
-$(document).ready(function() {	
+// Generates all the questions with the appropriate options bar
+$(document).ready(function() {
 	survey = jsonobj["survey"];
 	var curQuestionNum = 1;
 	for (var questionGroup of survey){
 		questions = [];
 		options = [];
+
 		for(var option of questionGroup["options"]){
-			options.push(option["texts"])
+			options.push(option["texts"]);
 		}
 		for(var question of questionGroup["questions"]){
 			questions.push(question["QuestionName"]);
 		}
+
+		$(".questions").append("<div class=\"col-7\">");
+		for(var i = 0; i < options.length; i++){
+			$(".questions").append(genOptions(options[i]));
+		}
+		$(".questions").append("<div class=\"col-1\"></div>");
+
 		for(var i = 0; i < questions.length; i++){
 			$(".questions").append(genQuestionHtml(questions[i], curQuestionNum));
 			curQuestionNum += 1;
@@ -149,42 +146,42 @@ jsonobj = {
 	{
 		"options": [
 		{
-			"option_id": 1,
-			"texts": "SO BAD",
+			"option_id": 2,
+			"texts": "So Bad",
 			"weights": 1
 		},
 		{
-			"option_id": 1,
+			"option_id": 2,
 			"texts": "OK",
 			"weights": 3
 		},
 		{
-			"option_id": 1,
-			"texts": "GOOD",
+			"option_id": 2,
+			"texts": "Good",
 			"weights": 4
 		},
 		{
-			"option_id": 1,
-			"texts": "GRRRREAT!",
+			"option_id": 2,
+			"texts": "Great",
 			"weights": 5
 		}
 		],
 		"questions": [
 		{
-			"id": 1000000,
+			"id": 10,
 			"category": 3,
 			"QuestionWeight": 4,
 			"QuestionName": "How you feel?",
 			"response": -1
 		},
 		{
-			"id": 1000001,
+			"id": 11,
 			"category": 3,
 			"QuestionWeight": 2,
 			"QuestionName": "How you mom feel?"
 		},
 		{
-			"id": 1000002,
+			"id": 12,
 			"category": 1,
 			"QuestionWeight": 1,
 			"QuestionName": "How you father feel?",
