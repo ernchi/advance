@@ -15,8 +15,7 @@ function genQuestionHtml(question, num){
 
 // Generates options bar
 function genOptions(options){
-	var str = "<div class=\"options\">\r\n"
-	str = str.concat("    <div class=\"col-1\"><p>");
+	var str = "    <div class=\"col-1\"><p>";
 	str = str.concat(options);
 	str = str.concat("</p></div>");
 	return str;
@@ -29,6 +28,7 @@ function genOptions(options){
 $(document).ready(function() {
 	survey = jsonobj["survey"];
 	var curQuestionNum = 1;
+	var optionNum = 1;
 	for (var questionGroup of survey){
 		questions = [];
 		options = [];
@@ -40,10 +40,11 @@ $(document).ready(function() {
 			questions.push(question["QuestionName"]);
 		}
 
-		$(".questions").append("<div class=\"col-7\">");
+		$(".questions").append("<div class=\"options-" + optionNum + "\"><div class=\"col-7\">");
 		for(var i = 0; i < options.length; i++){
-			$(".questions").append(genOptions(options[i]));
+			$(".options-" + optionNum).append(genOptions(options[i]));
 		}
+		optionNum = optionNum + 1;
 		$(".questions").append("<div class=\"col-1\"></div>");
 
 		for(var i = 0; i < questions.length; i++){
