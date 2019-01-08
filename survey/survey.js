@@ -4,6 +4,7 @@ function genQuestionHtml(question, num){
 	str = str.concat("  <div class=\"col-1\"></div>\r\n");
 	str = str.concat("  <div class=\"col-6\">Q" + num + ". " + question + "</div>\r\n");
 	for (var i = 1; i <= 4; i++) {
+		// must be of this format because of how submit button click works
 		var name = "btn" + i + "_" + num;
 		// add value tag
 		str = str.concat("  <div class=\"col-1\"><input type=\"radio\" id=\"" + name);
@@ -43,8 +44,8 @@ $(document).ready(function() {
 		for(var i = 0; i < options.length; i++){
 			$(".options-" + optionNum).append(genOptions(options[i]));
 		}
+
 		optionNum = optionNum + 1;
-		$(".questions").append("<div class=\"col-1\"></div>");
 
 		for(var i = 0; i < questions.length; i++){
 			$(".questions").append(genQuestionHtml(questions[i], curQuestionNum));
@@ -60,14 +61,21 @@ $(function(){
 		var noAns = 0;
 		for(var questionGroup of survey){
 			for(var question of questionGroup["questions"]){
-				var resp = -1;
+				var resp = "";
 				if($('input[name=Q' + curQuestionNum +  ']:checked').length==1){
-					resp = $('input[name=Q' + curQuestionNum + ']:checked')[0].id[3]
-				}
-				curQuestionNum++;
-				if(resp==-1){
+					id = $('input[name=Q' + curQuestionNum + ']:checked')[0].id
+					// get each char of the id coresponding to the response, starting at index 3
+					i = 3;
+					while(id[i]!="_"){
+						resp += id[i];
+						i++;
+					}
+					resp = parseInt(resp);
+				}else{
+					resp = -1;
 					noAns++;
 				}
+				curQuestionNum++;
 				question["response"] = resp;
 			}
 		}
