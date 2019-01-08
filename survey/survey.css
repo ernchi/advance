@@ -151,4 +151,17 @@ li:hover {
   /*background-color: #FFF; Make this white. */
 }
 
+/*Submit button*/
+.ui-button {
+  background: #6EBBAB;
+  color: white;
+  border-color: #6EBBAB;
+  border-style: none;
+  height: 50px;
+  width: 100px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 20px;
+  text-shadow: none;
+}
+
 }
