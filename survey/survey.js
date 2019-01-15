@@ -52,6 +52,7 @@ $(document).ready(function() {
 			curQuestionNum += 1;
 		}
 	}
+		$(".questions").append("<input class=\"ui-button\" id=\"submit_btn\" type=\"submit\" value=\"Submit\">");
 });
 
 $(function(){
@@ -75,6 +76,48 @@ $(function(){
 					noAns++;
 				}
 				curQuestionNum++;
+				question["response"] = resp;
+			}
+		}
+		alert("submitted! You did not answer " + noAns + " questions");
+	});
+});
+
+$(function(){
+	$("#submit_btn").click(function(){
+		var curQuestionNum = 1;
+		var noAns = 0;
+		for(var questionGroup of survey){
+			for(var question of questionGroup["questions"]){
+				var resp = -1;
+				if($('input[name=Q' + curQuestionNum +  ']:checked').length==1){
+					resp = $('input[name=Q' + curQuestionNum + ']:checked')[0].id[3]
+				}
+				curQuestionNum++;
+				if(resp==-1){
+					noAns++;
+				}
+				question["response"] = resp;
+			}
+		}
+		alert("submitted! You did not answer " + noAns + " questions");
+	});
+});
+
+$(function(){
+	$("#submit_btn").click(function(){
+		var curQuestionNum = 1;
+		var noAns = 0;
+		for(var questionGroup of survey){
+			for(var question of questionGroup["questions"]){
+				var resp = -1;
+				if($('input[name=Q' + curQuestionNum +  ']:checked').length==1){
+					resp = $('input[name=Q' + curQuestionNum + ']:checked')[0].id[3]
+				}
+				curQuestionNum++;
+				if(resp==-1){
+					noAns++;
+				}
 				question["response"] = resp;
 			}
 		}
