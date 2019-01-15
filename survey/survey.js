@@ -79,49 +79,11 @@ $(function(){
 				question["response"] = resp;
 			}
 		}
-		alert("submitted! You did not answer " + noAns + " questions");
-	});
-});
-
-$(function(){
-	$("#submit_btn").click(function(){
-		var curQuestionNum = 1;
-		var noAns = 0;
-		for(var questionGroup of survey){
-			for(var question of questionGroup["questions"]){
-				var resp = -1;
-				if($('input[name=Q' + curQuestionNum +  ']:checked').length==1){
-					resp = $('input[name=Q' + curQuestionNum + ']:checked')[0].id[3]
-				}
-				curQuestionNum++;
-				if(resp==-1){
-					noAns++;
-				}
-				question["response"] = resp;
-			}
+		if(noAns>0){
+			alert("submitted! You did not answer " + noAns + " questions");
+		}else{
+			alert("Submitted! Good job my friend, you have done a service to humanity, and a service to yourself.")
 		}
-		alert("submitted! You did not answer " + noAns + " questions");
-	});
-});
-
-$(function(){
-	$("#submit_btn").click(function(){
-		var curQuestionNum = 1;
-		var noAns = 0;
-		for(var questionGroup of survey){
-			for(var question of questionGroup["questions"]){
-				var resp = -1;
-				if($('input[name=Q' + curQuestionNum +  ']:checked').length==1){
-					resp = $('input[name=Q' + curQuestionNum + ']:checked')[0].id[3]
-				}
-				curQuestionNum++;
-				if(resp==-1){
-					noAns++;
-				}
-				question["response"] = resp;
-			}
-		}
-		alert("submitted! You did not answer " + noAns + " questions");
 	});
 });
 
