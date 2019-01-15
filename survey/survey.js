@@ -63,7 +63,7 @@ $(function(){
 				var resp = "";
 				if($('input[name=Q' + curQuestionNum +  ']:checked').length==1){
 					id = $('input[name=Q' + curQuestionNum + ']:checked')[0].id
-					// get each char of the id coresponding to the response, starting at index 3
+					// get each char of the id coresponding to the response number which starts at index 3
 					i = 3;
 					while(id[i]!="_"){
 						resp += id[i];
