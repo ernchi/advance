@@ -64,7 +64,7 @@ $(function(){
 				var resp = "";
 				if($('input[name=Q' + curQuestionNum +  ']:checked').length==1){
 					id = $('input[name=Q' + curQuestionNum + ']:checked')[0].id
-					// get each char of the id coresponding to the response, starting at index 3
+					// get each char of the id coresponding to the response number which starts at index 3
 					i = 3;
 					while(id[i]!="_"){
 						resp += id[i];
@@ -79,7 +79,11 @@ $(function(){
 				question["response"] = resp;
 			}
 		}
-		alert("submitted! You did not answer " + noAns + " questions");
+		if(noAns>0){
+			alert("submitted! You did not answer " + noAns + " questions");
+		}else{
+			alert("Submitted! Good job my friend, you have done a service to humanity, and a service to yourself.")
+		}
 	});
 });
 
