@@ -67,12 +67,18 @@ li:hover {
 /*Survey questions*/
 .row::after {
 }
+
 .questions header {
-  background-color: #339911;
+  background-color: #6EBBAB;
   color: #ffffff;
   padding: 15px;
   display: inline-grid;
 }
+
+div.questions > div:first(odd) {
+    background: #000000;
+}
+
 div.questions > div:nth-of-type(odd) {
     background: #A0DACF;
 }
@@ -109,7 +115,6 @@ div.questions > div:nth-of-type(odd) {
 
 .response-btn input[type="radio"] {
   display: none;
-
 }
 
 .response-btn label {
@@ -118,10 +123,11 @@ div.questions > div:nth-of-type(odd) {
   cursor: pointer;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: #BBE;
 }
 
 .response-btn label:hover {
- background:#DDD;
+ background: #BBB;
  align-self: end;
 }
 
@@ -150,7 +156,7 @@ div.questions > div:nth-of-type(odd) {
   width: 100%;
   left: 0;
   bottom: 0;
-  /*background-color: #FFF; Make this white. */
+  background-color: #FFF; Make this white.
 }
 
 /*Submit button*/
