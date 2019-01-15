@@ -45,8 +45,11 @@
       height: 100%;
     }
     .Lucida {
-            font-family: Lucida Console;
+            font-family: cursive;
             letter-spacing: 0.01px;
+    }
+    .cursive{
+      font-family: cursive;
     }
 
     /*Adjusts the width of the main body of the webpage*/
@@ -63,12 +66,18 @@
       color: white;
       padding: 15px;
     }
+   
 
     /*Styling for survey block*/
     .surveyBlock {
-      background-position: center;
+      margin-left: auto;
+      margin-right: auto;
+       font-family: cursive;
+
+      background-position: -25px -50px;
       background-image: url("http://cdn.strategyonline.ca/wp/wp-content/uploads/2015/12/shutterstock_253684528.jpg?w=640");
-       background-size: 1200px;
+       background-size: 1000px;
+
        background-repeat: no-repeat;
       width: 900px;
       height: 400px;
@@ -89,7 +98,7 @@
       color: #3466BD;
       font-size: 60px;
       letter-spacing: 4px;
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-family: cursive;
     }
 
     .surveyBlock p {
