@@ -52,6 +52,7 @@ $(document).ready(function() {
 			curQuestionNum += 1;
 		}
 	}
+		$(".questions").append("<input class=\"ui-button\" id=\"submit_btn\" type=\"submit\" value=\"Submit\">");
 });
 
 $(function(){
