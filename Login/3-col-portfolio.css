@@ -1,0 +1,211 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #6EBBAB;
+  border: 0px;
+}
+
+/*Altering the text in the navigation bar*/
+.navbar .nav li a {
+  font-size: 20px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+/*Styling when hovering over the options in the menu*/
+li:hover {
+  background-color: #A0DACF;
+  color: white;
+  text-decoration: none;
+}
+
+/*Styling for the navbar toggle*/
+.navbar-toggle {
+  border: 0;
+  background-color: transparent;
+}
+
+#nav:hover {
+  background-color: #A0DACF;
+}
+
+#nav:focus {
+  background: transparent;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/*Adjusts the width of the main body of the webpage*/
+.col-sm-8 {
+  width: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #6EBBAB;
+  color: white;
+  padding: 15px;
+}
+
+/*Styling for survey block*/
+.surveyBlock {
+  background-image: url("survey_bg.jpg");
+  border: 10px solid #6ebbab;
+  width: 100%;
+  height: 30em;
+  text-align: left;
+  padding-left: 2em;
+  margin-bottom: 3em;
+}
+
+.surveyBlock button {
+  position: relative;
+  transition: .5s ease;
+}
+
+.surveyBlock h3 {
+  color: white;
+  font-size: 60px;
+  letter-spacing: 4px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.surveyBlock p {
+  color: white;
+  font-size: 24px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.wellBeingArticles {
+
+  width: 100%;
+  border: 2px solid #6ebbab;
+  padding: 2em;
+  margin-bottom: 5%;
+  color: #57998b;
+
+
+}
+
+.wellBeingArticles h2 {
+
+  text-align: left;
+}
+
+
+.lifeSkillsArticles h2 {
+
+  text-align: left;
+}
+
+.lifeSkillsArticles {
+
+  width: 100%;
+  border: 2px solid #6ebbab;
+  padding: 2em;
+  margin-bottom: 5%;
+  color: #57998b;
+
+
+}
+
+
+.wellBeingArticles span {
+
+  font-weight: lighter;
+  color: black;
+
+}
+
+.lifeSkillsArticles span {
+
+  font-weight: lighter;
+  color: black;
+
+}
+
+.box1, .box2, .box3 {
+width: 29%;
+height: 180px;
+border: 2px solid #6ebbab;
+margin: 8px 10px;
+display: inline-block;
+}
+
+.wellBeingArticles .box1 button{
+  visibility: hidden;
+
+}
+
+.wellBeingArticles .box2 button{
+  visibility: hidden;
+
+}
+
+.wellBeingArticles .box3 button{
+  visibility: hidden;
+
+}
+
+.wellBeingArticles .box1:hover button{
+  visibility: visible;
+
+}
+
+.wellBeingArticles .box2:hover button{
+  visibility: visible;
+}
+
+.wellBeingArticles .box3:hover button{
+  visibility: visible;
+}
+
+
+.lifeSkillsArticles .box1 button{
+  visibility: hidden;
+
+}
+
+.lifeSkillsArticles .box2 button{
+  visibility: hidden;
+
+}
+
+.lifeSkillsArticles .box3 button{
+  visibility: hidden;
+
+}
+
+.lifeSkillsArticles .box1:hover button{
+  visibility: visible;
+
+}
+
+.lifeSkillsArticles .box2:hover button{
+  visibility: visible;
+}
+
+.lifeSkillsArticles .box3:hover button{
+  visibility: visible;
+}
+
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}
