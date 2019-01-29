@@ -28,12 +28,13 @@
     text-align: left;
   }
   .middleColumn .personalizedTitle {
+    color: #6EBBAB;
     position: static;
     font-weight: 650;
   }
   .middleColumn .titleInformationContainer {
     position: relative;
-    min-height: 250px;
+    min-height: 180px;
   }
   .middleColumn .titleInformationContainer .personalizedTitleLeftPart {
     position: absolute;
@@ -53,6 +54,11 @@
   }
   .middleColumn .titleInformationContainer .personalizedTitleRightPart .personalizedTitleRightPartHeader:first-child {
     margin-top: 0;
+  }
+  .middleColumn .personalizedRecommendedSupportHeaderContainer {
+    color: #6EBBAB;
+    width: 100%;
+    border-bottom: 1px gray solid;
   }
   .rightColumn {
     -ms-grid-column: 3;

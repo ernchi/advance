@@ -1,4 +1,5 @@
 // NOTE - This is autocompiled SCSS
+$weirdGreen: #6EBBAB;
 
 /* Always applied, only in a media query to keep it organized */
 @media only screen and (min-width: 1px)
@@ -40,6 +41,8 @@
         
         .personalizedTitle 
         {
+            color: $weirdGreen;
+            
             position: static;
 
             font-weight: 650;
@@ -49,7 +52,7 @@
         {
             position: relative;
 
-            min-height: 250px;
+            min-height: 180px;
 
             .personalizedTitleLeftPart 
             {
@@ -82,6 +85,16 @@
                     margin-top: 0;
                 }
             }
+        }
+
+        // Man, what a class name 
+        .personalizedRecommendedSupportHeaderContainer
+        {
+            color: $weirdGreen;
+
+            width: 100%;
+
+            border-bottom: 1px gray solid;
         }
     }
 
