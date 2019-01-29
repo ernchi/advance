@@ -36,9 +36,51 @@
 
         padding: 30px;
 
-        h1 
+        text-align: left;
+        
+        .titleInformation 
         {
-            display: absolute;
+            position: relative;
+
+            min-height: 250px;
+
+            .personalizedTitleLeftPart 
+            {
+                h1 
+                {
+                    font-size: .8rem;
+                    font-weight: 650;
+                }
+
+                position: absolute;
+
+                left: 0;
+                top: 0;
+            }
+
+            .personalizedTitleRightPart
+            {
+                position: absolute;
+
+                right: 0;
+                top: 50px;
+
+                border-left: 1px gray solid;
+
+                padding-left: 50px;
+
+                .personalizedTitleRightPartHeader
+                {
+                    font-weight: 800;
+
+                    margin-top: 20px;
+                }
+
+                .personalizedTitleRightPartHeader:first-child 
+                {
+                    margin-top: 0;
+                }
+            }
         }
     }
 
@@ -47,8 +89,6 @@
         grid-column-start: 3;
         grid-column-end: 4;
     }
-
-    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -58,6 +98,20 @@
     {
         grid-template-columns: 1fr 8fr 1fr;
     }
+
+    .middleColumn 
+    {
+        .titleInformation 
+        {
+            .personalizedTitleLeftPart 
+            {
+                h1 
+                {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -66,7 +120,21 @@
     .gridContainer 
     {
         // 15% width each 
-        grid-template-columns: 3fr 14fr 3fr;
+        grid-template-columns: 2fr 14fr 2fr;
+    }
+
+    .middleColumn 
+    {
+        .titleInformation 
+        {
+            .personalizedTitleLeftPart 
+            {
+                h1 
+                {
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }
 
@@ -76,7 +144,21 @@
     .gridContainer 
     {
         // 20% width each 
-        grid-template-columns: 2fr 6fr 2fr;
+        grid-template-columns: 2fr 8fr 2fr;
+    }
+
+    .middleColumn 
+    {
+        .titleInformation 
+        {
+            .personalizedTitleLeftPart 
+            {
+                h1 
+                {
+                    font-size: 3rem;
+                }
+            }
+        }
     }
 }
 
