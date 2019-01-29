@@ -175,14 +175,16 @@ $weirdGreen: #6EBBAB;
 
         .personalizedPictureContainer
         {
+            position: relative;
+
             padding: 20px 0;
 
             > img, > div 
             {
                 display: inline-block;
-                vertical-align: top;
             }
 
+            // Todo - Hide the picture if it gets too small (going to have to modify div positioning too, but that isn't hard)
             > img 
             {
                 // Todo - FIgure out if there are better, more scalable versions of this 
@@ -190,10 +192,13 @@ $weirdGreen: #6EBBAB;
                 height: 200px;
             }
 
-            > div 
+            div 
             {
-                margin-top: 0;
-                padding-top: 0;
+                position: absolute;
+
+                top: 0;
+                left: 150px;
+                padding-left: 15px;
             }
         }
     }

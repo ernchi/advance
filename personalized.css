@@ -116,19 +116,21 @@
     color: black;
   }
   .middleColumn .personalizedPictureContainer {
+    position: relative;
     padding: 20px 0;
   }
   .middleColumn .personalizedPictureContainer > img, .middleColumn .personalizedPictureContainer > div {
     display: inline-block;
-    vertical-align: top;
   }
   .middleColumn .personalizedPictureContainer > img {
     width: 150px;
     height: 200px;
   }
-  .middleColumn .personalizedPictureContainer > div {
-    margin-top: 0;
-    padding-top: 0;
+  .middleColumn .personalizedPictureContainer div {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    padding-left: 15px;
   }
   .rightColumn {
     -ms-grid-column: 3;
