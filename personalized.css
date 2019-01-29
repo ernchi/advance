@@ -44,10 +44,17 @@
     padding: 30px;
     text-align: left;
   }
-  .middleColumn .personalizedTitle {
+  .middleColumn .personalizedOverallTitle {
     color: #6EBBAB;
-    position: static;
     font-weight: 650;
+  }
+  .middleColumn .personalizedSectionTitleContainer {
+    padding-bottom: 10px;
+    border-bottom: 1px gray solid;
+  }
+  .middleColumn .personalizedSectionTitleContainer .personalizedSectionTitle {
+    color: #6EBBAB;
+    font-weight: 550;
   }
   .middleColumn .titleInformationContainer {
     position: relative;
@@ -62,7 +69,6 @@
     position: absolute;
     right: 0;
     top: 0;
-    border-left: 1px gray solid;
     padding-left: 50px;
   }
   .middleColumn .titleInformationContainer .personalizedTitleRightPart .personalizedTitleRightPartHeader {
@@ -75,12 +81,11 @@
   .middleColumn .personalizedRecommendedSupportHeaderContainer {
     color: #6EBBAB;
     width: 100%;
-    border-bottom: 1px gray solid;
     margin-bottom: 50px;
   }
   .middleColumn .personalizedBoxContainer {
-    border-bottom: 1px black solid;
     padding: 20px 0;
+    border-bottom: 1px gray solid;
   }
   .middleColumn .personalizedBoxContainer div, .middleColumn .personalizedBoxContainer p, .middleColumn .personalizedBoxContainer ul, .middleColumn .personalizedBoxContainer li, .middleColumn .personalizedBoxContainer a {
     font-size: 18px;
@@ -109,6 +114,21 @@
   }
   .middleColumn .personalizedBoxContainer .personalizedBoxContainerDescription {
     color: black;
+  }
+  .middleColumn .personalizedPictureContainer {
+    padding: 20px 0;
+  }
+  .middleColumn .personalizedPictureContainer > img, .middleColumn .personalizedPictureContainer > div {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .middleColumn .personalizedPictureContainer > img {
+    width: 150px;
+    height: 200px;
+  }
+  .middleColumn .personalizedPictureContainer > div {
+    margin-top: 0;
+    padding-top: 0;
   }
   .rightColumn {
     -ms-grid-column: 3;

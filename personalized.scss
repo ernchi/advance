@@ -59,13 +59,22 @@ $weirdGreen: #6EBBAB;
 
         text-align: left;
         
-        .personalizedTitle 
+        .personalizedOverallTitle
         {
             color: $weirdGreen;
-            
-            position: static;
-
             font-weight: 650;
+        }
+
+        .personalizedSectionTitleContainer
+        {
+            padding-bottom: 10px;
+            border-bottom: 1px gray solid;
+
+            .personalizedSectionTitle
+            {
+                color: $weirdGreen;
+                font-weight: 550;
+            }
         }
 
         .titleInformationContainer
@@ -88,8 +97,6 @@ $weirdGreen: #6EBBAB;
 
                 right: 0;
                 top: 0;
-
-                border-left: 1px gray solid;
 
                 padding-left: 50px;
 
@@ -114,15 +121,13 @@ $weirdGreen: #6EBBAB;
 
             width: 100%;
 
-            border-bottom: 1px gray solid;
             margin-bottom: 50px;
         }
 
         .personalizedBoxContainer 
         {
-            border-bottom: 1px black solid;
-
             padding: 20px 0;
+            border-bottom: 1px gray solid;
 
             // Todo - Figure out a consistent method of padding so it looks more like the picture 
             div, p, ul, li, a
@@ -166,6 +171,30 @@ $weirdGreen: #6EBBAB;
                 color: black;
             }           
 
+        }
+
+        .personalizedPictureContainer
+        {
+            padding: 20px 0;
+
+            > img, > div 
+            {
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            > img 
+            {
+                // Todo - FIgure out if there are better, more scalable versions of this 
+                width: 150px;
+                height: 200px;
+            }
+
+            > div 
+            {
+                margin-top: 0;
+                padding-top: 0;
+            }
         }
     }
 
