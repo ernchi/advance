@@ -77,6 +77,34 @@
     width: 100%;
     border-bottom: 1px gray solid;
   }
+  .middleColumn .personalizedBoxContainer {
+    border-bottom: 1px black solid;
+    padding: 20px 0;
+  }
+  .middleColumn .personalizedBoxContainer div, .middleColumn .personalizedBoxContainer p, .middleColumn .personalizedBoxContainer ul, .middleColumn .personalizedBoxContainer li, .middleColumn .personalizedBoxContainer a {
+    font-size: 18px;
+  }
+  .middleColumn .personalizedBoxContainer .personalizedBoxContainerTitle {
+    color: #6EBBAB;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .middleColumn .personalizedBoxContainer .personalizedBoxContainerLink {
+    color: black;
+  }
+  .middleColumn .personalizedBoxContainer .personalizedBoxContainerLinkButton {
+    background-color: #6EBBAB;
+    padding: 10px;
+    border-radius: 15px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 10px 0;
+    color: white;
+  }
+  .middleColumn .personalizedBoxContainer .personalizedBoxContainerDescription {
+    color: black;
+  }
   .rightColumn {
     -ms-grid-column: 3;
         grid-column-start: 3;

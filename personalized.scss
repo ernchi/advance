@@ -116,6 +116,51 @@ $weirdGreen: #6EBBAB;
 
             border-bottom: 1px gray solid;
         }
+
+        .personalizedBoxContainer 
+        {
+            border-bottom: 1px black solid;
+
+            padding: 20px 0;
+            
+            // Todo - Figure out a consistent method of padding so it looks more like the picture 
+            div, p, ul, li, a
+            {
+                font-size: 18px;
+            }
+
+            .personalizedBoxContainerTitle
+            {
+                color: $weirdGreen;
+                font-size: 30px;
+                font-weight: 700;
+            }
+
+            .personalizedBoxContainerLink
+            {
+                color: black;
+            }
+
+            .personalizedBoxContainerLinkButton 
+            {
+                background-color: $weirdGreen;
+
+                padding: 10px;
+                border-radius: 15px;
+
+                width: fit-content;
+
+                margin: 10px 0;
+
+                color: white;
+            }
+            
+            .personalizedBoxContainerDescription
+            {
+                color: black;
+            }           
+
+        }
     }
 
     .rightColumn 
