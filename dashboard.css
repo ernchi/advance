@@ -44,19 +44,10 @@
       background-color: #f1f1f1;
       height: 100%;
     }
-    .Lucida {
-            font-family: cursive;
-            letter-spacing: 0.01px;
-    }
-    .cursive{
-      font-family: cursive;
-    }
-
     /*Adjusts the width of the main body of the webpage*/
     .col-sm-8 {
-      color:teal;
-      font-family: cursive;
-      text-transform: capitalize;
+      color:#6EBBAB;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
       width: 100%;
     }
 
@@ -72,7 +63,7 @@
     .surveyBlock {
       margin-left: auto;
       margin-right: auto;
-       font-family: cursive;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
 
       background-position: -25px -50px;
       background-image: url("http://cdn.strategyonline.ca/wp/wp-content/uploads/2015/12/shutterstock_253684528.jpg?w=640");
@@ -95,10 +86,10 @@
     }
 
     .surveyBlock h3 {
-      color: #3466BD;
+      color: #FFFFFF;
       font-size: 60px;
       letter-spacing: 4px;
-      font-family: cursive;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
     }
 
     .surveyBlock p {
@@ -161,6 +152,7 @@
     border: 2px solid #6ebbab;
     margin: 8px 10px;
     display: inline-block;
+
     }
 
     .wellBeingArticles .box1 button{
