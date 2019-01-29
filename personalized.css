@@ -27,31 +27,31 @@
     padding: 30px;
     text-align: left;
   }
-  .middleColumn .titleInformation {
+  .middleColumn .personalizedTitle {
+    position: static;
+    font-weight: 650;
+  }
+  .middleColumn .titleInformationContainer {
     position: relative;
     min-height: 250px;
   }
-  .middleColumn .titleInformation .personalizedTitleLeftPart {
+  .middleColumn .titleInformationContainer .personalizedTitleLeftPart {
     position: absolute;
     left: 0;
     top: 0;
   }
-  .middleColumn .titleInformation .personalizedTitleLeftPart h1 {
-    font-size: .8rem;
-    font-weight: 650;
-  }
-  .middleColumn .titleInformation .personalizedTitleRightPart {
+  .middleColumn .titleInformationContainer .personalizedTitleRightPart {
     position: absolute;
     right: 0;
-    top: 50px;
+    top: 0;
     border-left: 1px gray solid;
     padding-left: 50px;
   }
-  .middleColumn .titleInformation .personalizedTitleRightPart .personalizedTitleRightPartHeader {
+  .middleColumn .titleInformationContainer .personalizedTitleRightPart .personalizedTitleRightPartHeader {
     font-weight: 800;
     margin-top: 20px;
   }
-  .middleColumn .titleInformation .personalizedTitleRightPart .personalizedTitleRightPartHeader:first-child {
+  .middleColumn .titleInformationContainer .personalizedTitleRightPart .personalizedTitleRightPartHeader:first-child {
     margin-top: 0;
   }
   .rightColumn {
@@ -67,9 +67,6 @@
     -ms-grid-columns: 1fr 8fr 1fr;
         grid-template-columns: 1fr 8fr 1fr;
   }
-  .middleColumn .titleInformation .personalizedTitleLeftPart h1 {
-    font-size: 1.5rem;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -78,9 +75,6 @@
     -ms-grid-columns: 2fr 14fr 2fr;
         grid-template-columns: 2fr 14fr 2fr;
   }
-  .middleColumn .titleInformation .personalizedTitleLeftPart h1 {
-    font-size: 2rem;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -88,9 +82,6 @@
   .gridContainer {
     -ms-grid-columns: 2fr 8fr 2fr;
         grid-template-columns: 2fr 8fr 2fr;
-  }
-  .middleColumn .titleInformation .personalizedTitleLeftPart h1 {
-    font-size: 3rem;
   }
 }
 

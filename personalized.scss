@@ -38,7 +38,14 @@
 
         text-align: left;
         
-        .titleInformation 
+        .personalizedTitle 
+        {
+            position: static;
+
+            font-weight: 650;
+        }
+
+        .titleInformationContainer
         {
             position: relative;
 
@@ -46,12 +53,6 @@
 
             .personalizedTitleLeftPart 
             {
-                h1 
-                {
-                    font-size: .8rem;
-                    font-weight: 650;
-                }
-
                 position: absolute;
 
                 left: 0;
@@ -63,7 +64,7 @@
                 position: absolute;
 
                 right: 0;
-                top: 50px;
+                top: 0;
 
                 border-left: 1px gray solid;
 
@@ -98,20 +99,6 @@
     {
         grid-template-columns: 1fr 8fr 1fr;
     }
-
-    .middleColumn 
-    {
-        .titleInformation 
-        {
-            .personalizedTitleLeftPart 
-            {
-                h1 
-                {
-                    font-size: 1.5rem;
-                }
-            }
-        }
-    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -122,20 +109,6 @@
         // 15% width each 
         grid-template-columns: 2fr 14fr 2fr;
     }
-
-    .middleColumn 
-    {
-        .titleInformation 
-        {
-            .personalizedTitleLeftPart 
-            {
-                h1 
-                {
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -145,20 +118,6 @@
     {
         // 20% width each 
         grid-template-columns: 2fr 8fr 2fr;
-    }
-
-    .middleColumn 
-    {
-        .titleInformation 
-        {
-            .personalizedTitleLeftPart 
-            {
-                h1 
-                {
-                    font-size: 3rem;
-                }
-            }
-        }
     }
 }
 
