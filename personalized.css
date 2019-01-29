@@ -1,0 +1,64 @@
+/* Always applied, only in a media query to keep it organized */
+@media only screen and (min-width: 1px) {
+  .gridContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 0px 10fr 0px;
+        grid-template-columns: 0px 10fr 0px;
+  }
+  .siteStructureColumn {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .leftColumn {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .middleColumn {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    display: relative;
+    padding: 30px;
+  }
+  .middleColumn h1 {
+    display: absolute;
+  }
+  .rightColumn {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .gridContainer {
+    -ms-grid-columns: 1fr 8fr 1fr;
+        grid-template-columns: 1fr 8fr 1fr;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .gridContainer {
+    -ms-grid-columns: 3fr 14fr 3fr;
+        grid-template-columns: 3fr 14fr 3fr;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .gridContainer {
+    -ms-grid-columns: 2fr 6fr 2fr;
+        grid-template-columns: 2fr 6fr 2fr;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*# sourceMappingURL=personalized.css.map */
