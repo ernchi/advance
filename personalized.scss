@@ -8,7 +8,7 @@ $weirdGreen: #6EBBAB;
     {
         display: grid;
         
-        grid-template-rows: 1fr;
+        grid-template-rows: auto auto auto;
 
         // Nonexistent columns
         grid-template-columns: 0px 10fr 0px;
@@ -16,8 +16,28 @@ $weirdGreen: #6EBBAB;
 
     .siteStructureColumn 
     {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .navbar 
+    {
+        grid-column-start: 1;
+        grid-column-end: 4;
+
         grid-row-start: 1;
         grid-row-end: 2;
+    }
+
+    #personalizationFooter
+    {
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        width: 100%;
     }
 
     .leftColumn 
