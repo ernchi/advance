@@ -1,0 +1,36 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #6EBBAB;
+  border: 0px;
+}
+
+/*Altering the text in the navigation bar*/
+.navbar .nav li a {
+  font-size: 20px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+/*Styling when hovering over the options in the menu*/
+li:hover {
+  background-color: #A0DACF;
+  color: white;
+  text-decoration: none;
+}
+
+/*Styling for the navbar toggle*/
+.navbar-toggle {
+  border: 0;
+  background-color: transparent;
+}
+
+#nav:hover {
+  background-color: #A0DACF;
+}
+
+#nav:focus {
+  background: transparent;
+}

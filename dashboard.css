@@ -67,6 +67,11 @@ footer {
   padding: 15px;
 }
 
+    /*Styling for survey block*/
+    .surveyBlock {
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
 
 /*Styling for survey block*/
 .surveyBlock {
@@ -89,6 +94,12 @@ color:  #3466BD;
   margin-bottom: 3em;
 }
 
+    .surveyBlock h3 {
+      color: #FFFFFF;
+      font-size: 60px;
+      letter-spacing: 4px;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
 .surveyBlock button {
   position: relative;
   transition: .5s ease;
@@ -153,7 +164,14 @@ color:  #3466BD;
   font-weight: lighter;
   color: black;
 
-}
+    .box1, .box2, .box3 {
+    width: 29%;
+    height: 180px;
+    border: 2px solid #6ebbab;
+    margin: 8px 10px;
+    display: inline-block;
+
+    }
 
 .box1, .box2, .box3 {
 width: 29%;
