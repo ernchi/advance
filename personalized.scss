@@ -199,7 +199,25 @@ $weirdGreen: #6EBBAB;
                 top: 0;
                 left: 150px;
                 padding-left: 15px;
+
+                a 
+                {
+                    color: white;
+                    background-color: $weirdGreen;
+
+                    padding: 10px;
+                    border-radius: 10px;
+
+                    margin-bottom: 20px;
+                }
+
+                .personalizedPictureContainerParagraph
+                {
+                    margin-top: 30px;
+                }
             }
+
+            
         }
     }
 

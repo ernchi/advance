@@ -132,6 +132,16 @@
     left: 150px;
     padding-left: 15px;
   }
+  .middleColumn .personalizedPictureContainer div a {
+    color: white;
+    background-color: #6EBBAB;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .middleColumn .personalizedPictureContainer div .personalizedPictureContainerParagraph {
+    margin-top: 30px;
+  }
   .rightColumn {
     -ms-grid-column: 3;
         grid-column-start: 3;
