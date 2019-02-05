@@ -1,0 +1,61 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #6EBBAB;
+  border: 0px;
+}
+
+/*Altering the text in the navigation bar*/
+.navbar .nav li a {
+  font-size: 20px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+/*Styling when hovering over the options in the navbar*/
+li:hover {
+  background-color: #A0DACF;
+  color: white;
+  text-decoration: none;
+}
+
+/*Styling for the navbar toggle*/
+.navbar-toggle {
+  border: 0;
+  background-color: transparent;
+}
+
+#nav:hover {
+  background-color: #A0DACF;
+}
+
+#nav:focus {
+  background: transparent;
+}
+
+/*Styling for the image cards for the articles*/
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+/*Setting the width of the title cards of each article*/
+[class*="col-"] {
+  float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-1_5 {width: 12.5%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
