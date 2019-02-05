@@ -40,7 +40,7 @@ $(document).ready(function() {
 			questions.push(question["QuestionName"]);
 		}
 
-		$(".questions").append("<div class=\"options-" + optionNum + "\"><div class=\"col-7\">");
+		$(".questions").append("<div class=\"options-" + optionNum + "\"><div class=\"col-6\">");
 		for(var i = 0; i < options.length; i++){
 			$(".options-" + optionNum).append(genOptions(options[i]));
 		}
