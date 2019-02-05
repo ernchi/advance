@@ -42,36 +42,30 @@
     grid-row-end: 4;
     width: 100%;
   }
+  .blackText {
+    color: black;
+  }
+  .greenText {
+    color: #6EBBAB;
+  }
   footer {
     width: 100%;
   }
-  /* 
-    
-    .personalizedTitleLeftPart 
-    {
-        position: static;
-        display: block;
-    }
-
-    .personalizedTitleRightPart
-    {
-        position: static;
-        display: block;
-
-        .personalizedTitleRightPartHeader
-        {
-            font-weight: 800;
-
-            margin-top: 20px;
-        }
-
-        .personalizedTitleRightPartHeader:first-child 
-        {
-            margin-top: 0;
-        }
-    }
-
-    */
+  .personalizedTitleLeftPart {
+    position: static;
+    display: block;
+  }
+  .personalizedTitleRightPart {
+    position: static;
+    display: block;
+  }
+  .personalizedTitleRightPart .personalizedTitleRightPartHeader {
+    font-weight: 800;
+    margin-top: 20px;
+  }
+  .personalizedTitleRightPart .personalizedTitleRightPartHeader:first-child {
+    margin-top: 0;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

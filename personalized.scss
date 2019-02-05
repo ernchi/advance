@@ -24,6 +24,10 @@ $heavyFontWeight: 700;
     .siteStructureColumn { grid-row-start: 2; grid-row-end: 3; }    
     footer { grid-row-start: 3; grid-row-end: 4; width: 100%;}
 
+    // ! Text Coloring Classes
+    .blackText { color: black; }
+    .greenText { color: $weirdGreen; }
+
     // ! Navbar-Specific Styling 
     // Most navbar styling is in the other stylesheet (the one inheriting styles from the dashboard page) 
 
@@ -59,8 +63,6 @@ $heavyFontWeight: 700;
             margin-top: 0;
         }
     }
-
-    */
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
