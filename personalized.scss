@@ -85,20 +85,14 @@ $weirdGreen: #6EBBAB;
 
             .personalizedTitleLeftPart 
             {
-                position: absolute;
-
-                left: 0;
-                top: 0;
+                position: static;
+                display: block;
             }
 
             .personalizedTitleRightPart
             {
-                position: absolute;
-
-                right: 0;
-                top: 0;
-
-                padding-left: 50px;
+                position: static;
+                display: block;
 
                 .personalizedTitleRightPartHeader
                 {
@@ -199,6 +193,22 @@ $weirdGreen: #6EBBAB;
                 top: 0;
                 left: 150px;
                 padding-left: 15px;
+
+                a 
+                {
+                    color: white;
+                    background-color: $weirdGreen;
+
+                    padding: 10px;
+                    border-radius: 10px;
+
+                    margin-bottom: 20px;
+                }
+
+                .personalizedPictureContainerParagraph
+                {
+                    margin-top: 30px;
+                }
             }
         }
     }
@@ -220,12 +230,34 @@ $weirdGreen: #6EBBAB;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) 
+@media only screen and (min-width: 800px) 
 {
     .gridContainer 
     {
         // 15% width each 
         grid-template-columns: 2fr 14fr 2fr;
+    }
+    
+    .middleColumn 
+    {
+        .titleInformationContainer
+        {
+            .personalizedTitleLeftPart 
+            {
+                position: absolute;
+
+                left: 0;
+                top: 0;
+            }
+
+            .personalizedTitleRightPart 
+            {
+                position: absolute;
+
+                right: 0;
+                top: 0;
+            }
+        }
     }
 }
 
