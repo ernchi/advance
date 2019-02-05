@@ -61,15 +61,12 @@
     min-height: 180px;
   }
   .middleColumn .titleInformationContainer .personalizedTitleLeftPart {
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: static;
+    display: block;
   }
   .middleColumn .titleInformationContainer .personalizedTitleRightPart {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-left: 50px;
+    position: static;
+    display: block;
   }
   .middleColumn .titleInformationContainer .personalizedTitleRightPart .personalizedTitleRightPartHeader {
     font-weight: 800;
@@ -158,10 +155,20 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .gridContainer {
     -ms-grid-columns: 2fr 14fr 2fr;
         grid-template-columns: 2fr 14fr 2fr;
+  }
+  .middleColumn .titleInformationContainer .personalizedTitleLeftPart {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .middleColumn .titleInformationContainer .personalizedTitleRightPart {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
