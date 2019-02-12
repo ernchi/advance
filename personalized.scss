@@ -1,74 +1,228 @@
-// NOTE - This is SCSS, which is autocompiled into CSS (which is why the CSS file looks so weird) 
+// NOTE - This is autocompiled SCSS
 $weirdGreen: #6EBBAB;
-
-// Different font weights used
-$lightFontWeight: 100;
-$mediumFontWeight: 400;
-$heavyFontWeight: 700;
 
 /* Always applied, only in a media query to keep it organized */
 @media only screen and (min-width: 1px)
 {
-    // ! Grid setup, positioning, and sizing 
-    // Parent element - Enables grid properties for all children 
-    .gridContainer { display: grid; grid-template-columns: 0 100fr 0; } 
-    
-    // Column-Specific  
-    .leftColumn { grid-column-start: 1; grid-column-end: 2; }
-    .middleColumn { grid-column-start: 2; grid-column-end: 3; }
-    .rightColumn { grid-column-start: 3; grid-column-end: 4; }
-    nav, footer { grid-column-start: 1; grid-column-end: 4; }
-
-    // Row-Specific 
-    nav { grid-row-start: 1; grid-row-end: 2; }
-    .siteStructureColumn { grid-row-start: 2; grid-row-end: 3; }    
-    footer { grid-row-start: 3; grid-row-end: 4; width: 100%;}
-
-    // ! Text Coloring Classes
-    .blackText { color: black; }
-    .greenText { color: $weirdGreen; }
-
-    // ! Navbar-Specific Styling 
-    // Most navbar styling is in the other stylesheet (the one inheriting styles from the dashboard page) 
-
-    // ! Page Content-Specific Styling 
-
-    // ! Footer-Specific Styling
-    footer 
+    .gridContainer
     {
-        // Otherwise, grid will make the element the size of its children/content, which is less than the width of the screen 
-        width: 100%; 
+        display: grid;
+        
+        grid-template-rows: auto auto auto;
+
+        // Nonexistent columns
+        grid-template-columns: 0px 10fr 0px;
     }
 
-    .personalizedTitleLeftPart 
+    .siteStructureColumn 
     {
-        position: static;
-        display: block;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
-    .personalizedTitleRightPart
+    .navbar 
     {
-        position: static;
-        display: block;
+        grid-column-start: 1;
+        grid-column-end: 4;
 
-        .personalizedTitleRightPartHeader
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #personalizationFooter
+    {
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        width: 100%;
+    }
+
+    .leftColumn 
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .middleColumn 
+    {
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+        text-align: center;
+
+        display: relative;
+
+        padding: 30px;
+
+        text-align: left;
+        
+        .personalizedOverallTitle
         {
-            font-weight: 800;
-
-            margin-top: 20px;
+            color: $weirdGreen;
+            font-weight: 650;
         }
 
-        .personalizedTitleRightPartHeader:first-child 
+        .personalizedSectionTitleContainer
         {
-            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px gray solid;
+
+            .personalizedSectionTitle
+            {
+                color: $weirdGreen;
+                font-weight: 550;
+            }
         }
+
+        .titleInformationContainer
+        {
+            position: relative;
+
+            min-height: 180px;
+
+            .personalizedTitleLeftPart 
+            {
+                position: static;
+                display: block;
+            }
+
+            .personalizedTitleRightPart
+            {
+                position: static;
+                display: block;
+
+                .personalizedTitleRightPartHeader
+                {
+                    font-weight: 800;
+
+                    margin-top: 20px;
+                }
+
+                .personalizedTitleRightPartHeader:first-child 
+                {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        // Man, what a class name 
+        .personalizedRecommendedSupportHeaderContainer
+        {
+            color: $weirdGreen;
+
+            width: 100%;
+
+            margin-bottom: 50px;
+        }
+
+        .personalizedBoxContainer 
+        {
+            padding: 20px 0;
+            border-bottom: 1px gray solid;
+
+            // Todo - Figure out a consistent method of padding so it looks more like the picture 
+            div, p, ul, li, a
+            {
+                font-size: 18px;
+            }
+
+            .personalizedBoxContainerTitle
+            {
+                color: $weirdGreen;
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0;
+                padding: 0;
+            }
+
+            .personalizedBoxContainerLink
+            {
+                color: black;
+            }
+
+            .personalizedBoxContainerLinkButton 
+            {
+                background-color: $weirdGreen;
+
+                padding: 5px 10px;
+                border-radius: 15px;
+
+                width: fit-content;
+
+                margin: 10px 0;
+
+                color: white;
+
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            
+            .personalizedBoxContainerDescription
+            {
+                color: black;
+            }           
+
+        }
+
+        .personalizedPictureContainer
+        {
+            position: relative;
+
+            padding: 20px 0;
+
+            > img, > div 
+            {
+                display: inline-block;
+            }
+
+            // Todo - Hide the picture if it gets too small (going to have to modify div positioning too, but that isn't hard)
+            > img 
+            {
+                // Todo - FIgure out if there are better, more scalable versions of this 
+                width: 150px;
+                height: 200px;
+            }
+
+            div 
+            {
+                position: absolute;
+
+                top: 0;
+                left: 150px;
+                padding-left: 15px;
+
+                a 
+                {
+                    color: white;
+                    background-color: $weirdGreen;
+
+                    padding: 10px;
+                    border-radius: 10px;
+
+                    margin-bottom: 20px;
+                }
+
+                .personalizedPictureContainerParagraph
+                {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    .rightColumn 
+    {
+        grid-column-start: 3;
+        grid-column-end: 4;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px)
 {
-    // ! Grid positioning, sizing 
     .gridContainer
     {
         grid-template-columns: 1fr 8fr 1fr;
@@ -78,7 +232,6 @@ $heavyFontWeight: 700;
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 800px) 
 {
-    // ! Grid positioning, sizing 
     .gridContainer 
     {
         // 15% width each 
@@ -111,7 +264,6 @@ $heavyFontWeight: 700;
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
 {
-    // ! Grid positioning, sizing 
     .gridContainer 
     {
         // 20% width each 
