@@ -51,21 +51,6 @@
   footer {
     width: 100%;
   }
-  .personalizedTitleLeftPart {
-    position: static;
-    display: block;
-  }
-  .personalizedTitleRightPart {
-    position: static;
-    display: block;
-  }
-  .personalizedTitleRightPart .personalizedTitleRightPartHeader {
-    font-weight: 800;
-    margin-top: 20px;
-  }
-  .personalizedTitleRightPart .personalizedTitleRightPartHeader:first-child {
-    margin-top: 0;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -79,16 +64,19 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 800px) {
   .gridContainer {
-    -ms-grid-columns: 2fr 14fr 2fr;
-        grid-template-columns: 2fr 14fr 2fr;
+    -ms-grid-columns: 10fr 80fr 10fr;
+        grid-template-columns: 10fr 80fr 10fr;
   }
-  .middleColumn .titleInformationContainer .personalizedTitleLeftPart {
-    position: absolute;
+  .pPageTitleContent {
+    display: relative;
+  }
+  .pPageTitleContent .pPageTitleLeftContent {
+    display: absolute;
     left: 0;
     top: 0;
   }
-  .middleColumn .titleInformationContainer .personalizedTitleRightPart {
-    position: absolute;
+  .pPageTitleContent .pPageTitleRightContent {
+    display: absolute;
     right: 0;
     top: 0;
   }
@@ -101,6 +89,4 @@
         grid-template-columns: 2fr 8fr 2fr;
   }
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 /*# sourceMappingURL=personalized.css.map */

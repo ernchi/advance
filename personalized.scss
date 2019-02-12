@@ -40,29 +40,7 @@ $heavyFontWeight: 700;
         width: 100%; 
     }
 
-    .personalizedTitleLeftPart 
-    {
-        position: static;
-        display: block;
-    }
-
-    .personalizedTitleRightPart
-    {
-        position: static;
-        display: block;
-
-        .personalizedTitleRightPartHeader
-        {
-            font-weight: 800;
-
-            margin-top: 20px;
-        }
-
-        .personalizedTitleRightPartHeader:first-child 
-        {
-            margin-top: 0;
-        }
-    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -82,30 +60,29 @@ $heavyFontWeight: 700;
     .gridContainer 
     {
         // 15% width each 
-        grid-template-columns: 2fr 14fr 2fr;
+        grid-template-columns: 10fr 80fr 10fr;
     }
     
-    .middleColumn 
+    .pPageTitleContent 
     {
-        .titleInformationContainer
+        display: relative;
+
+        .pPageTitleLeftContent
         {
-            .personalizedTitleLeftPart 
-            {
-                position: absolute;
+            display: absolute;
 
-                left: 0;
-                top: 0;
-            }
-
-            .personalizedTitleRightPart 
-            {
-                position: absolute;
-
-                right: 0;
-                top: 0;
-            }
+            left: 0;
+            top: 0;
         }
-    }
+
+        .pPageTitleRightContent 
+        {
+            display: absolute;
+
+            right: 0;
+            top: 0;
+        }
+    }    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -117,10 +94,4 @@ $heavyFontWeight: 700;
         // 20% width each 
         grid-template-columns: 2fr 8fr 2fr;
     }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) 
-{
-
 }
