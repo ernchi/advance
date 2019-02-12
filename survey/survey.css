@@ -51,17 +51,18 @@ li:hover {
 /*Description of the survey*/
 .survey-description {
   padding-left: 50px;
-  font-size:24px;
+  font-size: 20px;
 }
 
 /*Styling for the options bar*/
 [class*="options-"] {
   display: flex;
-  align-items: flex-end;
+
   justify-content: center;
   background-color: #6EBBAB;
+
   /*font color*/
-  color: white;
+  color: black;
 }
 
 /*Survey questions*/
@@ -103,18 +104,18 @@ div.questions > div:nth-of-type(odd) {
 
 .questions {
   height: 70px;
+  font-size: 18px;
 }
 
 .response-btn {
   position: relative;
   appearance: button;
   list-style-type:none;
-  margin-top: 0px;
-  margin: 25px 0 0 0;
 }
 
 .response-btn input[type="radio"] {
   display: none;
+
 }
 
 .response-btn label {
@@ -123,7 +124,7 @@ div.questions > div:nth-of-type(odd) {
   cursor: pointer;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #BBE;
+  background-color: #e2ffe4;
 }
 
 .response-btn label:hover {
@@ -133,30 +134,33 @@ div.questions > div:nth-of-type(odd) {
 
 .response-btn input[type="radio"]:checked + label,
 .Checked + label {
-  text-align: center;
   background: lightblue;
+  justify-content: center;
+  align-content: center;
+  justify-content: center;
+  align-items:center;
+  margin: 0 auto;
 }
 .response-btn {
-  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   position: relative;
 }
 
+
 .response-btn div {
-  height: 120px;
-  padding: 10px;
-  border-bottom: 1px solid black;
+  height: 80px;
+  padding: 16px;
 }
 
 .response-btn::after {
-  position: absolute;
   content: "";
   display: block;
-  height: 3px;
+  height: 0px;
   width: 100%;
-  left: 0;
-  bottom: 0;
-  background-color: #FFF; Make this white.
+  left: 200px;
+  background-color: white;
 }
 
 /*Submit button*/
