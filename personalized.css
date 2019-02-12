@@ -3,8 +3,32 @@
   .gridContainer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 0 100fr 0;
-        grid-template-columns: 0 100fr 0;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    -ms-grid-columns: 0px 10fr 0px;
+        grid-template-columns: 0px 10fr 0px;
+  }
+  .siteStructureColumn {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .navbar {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #personalizationFooter {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
   }
   .leftColumn {
     -ms-grid-column: 1;
@@ -15,56 +39,110 @@
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 3;
+    text-align: center;
+    display: relative;
+    padding: 30px;
+    text-align: left;
+  }
+  .middleColumn .personalizedOverallTitle {
+    color: #6EBBAB;
+    font-weight: 650;
+  }
+  .middleColumn .personalizedSectionTitleContainer {
+    padding-bottom: 10px;
+    border-bottom: 1px gray solid;
+  }
+  .middleColumn .personalizedSectionTitleContainer .personalizedSectionTitle {
+    color: #6EBBAB;
+    font-weight: 550;
+  }
+  .middleColumn .titleInformationContainer {
+    position: relative;
+    min-height: 180px;
+  }
+  .middleColumn .titleInformationContainer .personalizedTitleLeftPart {
+    position: static;
+    display: block;
+  }
+  .middleColumn .titleInformationContainer .personalizedTitleRightPart {
+    position: static;
+    display: block;
+  }
+  .middleColumn .titleInformationContainer .personalizedTitleRightPart .personalizedTitleRightPartHeader {
+    font-weight: 800;
+    margin-top: 20px;
+  }
+  .middleColumn .titleInformationContainer .personalizedTitleRightPart .personalizedTitleRightPartHeader:first-child {
+    margin-top: 0;
+  }
+  .middleColumn .personalizedRecommendedSupportHeaderContainer {
+    color: #6EBBAB;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .middleColumn .personalizedBoxContainer {
+    padding: 20px 0;
+    border-bottom: 1px gray solid;
+  }
+  .middleColumn .personalizedBoxContainer div, .middleColumn .personalizedBoxContainer p, .middleColumn .personalizedBoxContainer ul, .middleColumn .personalizedBoxContainer li, .middleColumn .personalizedBoxContainer a {
+    font-size: 18px;
+  }
+  .middleColumn .personalizedBoxContainer .personalizedBoxContainerTitle {
+    color: #6EBBAB;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+  .middleColumn .personalizedBoxContainer .personalizedBoxContainerLink {
+    color: black;
+  }
+  .middleColumn .personalizedBoxContainer .personalizedBoxContainerLinkButton {
+    background-color: #6EBBAB;
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 10px 0;
+    color: white;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .middleColumn .personalizedBoxContainer .personalizedBoxContainerDescription {
+    color: black;
+  }
+  .middleColumn .personalizedPictureContainer {
+    position: relative;
+    padding: 20px 0;
+  }
+  .middleColumn .personalizedPictureContainer > img, .middleColumn .personalizedPictureContainer > div {
+    display: inline-block;
+  }
+  .middleColumn .personalizedPictureContainer > img {
+    width: 150px;
+    height: 200px;
+  }
+  .middleColumn .personalizedPictureContainer div {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    padding-left: 15px;
+  }
+  .middleColumn .personalizedPictureContainer div a {
+    color: white;
+    background-color: #6EBBAB;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .middleColumn .personalizedPictureContainer div .personalizedPictureContainerParagraph {
+    margin-top: 30px;
   }
   .rightColumn {
     -ms-grid-column: 3;
         grid-column-start: 3;
     grid-column-end: 4;
-  }
-  nav, footer {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 4;
-  }
-  nav {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .siteStructureColumn {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  footer {
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    grid-row-end: 4;
-    width: 100%;
-  }
-  .blackText {
-    color: black;
-  }
-  .greenText {
-    color: #6EBBAB;
-  }
-  footer {
-    width: 100%;
-  }
-  .personalizedTitleLeftPart {
-    position: static;
-    display: block;
-  }
-  .personalizedTitleRightPart {
-    position: static;
-    display: block;
-  }
-  .personalizedTitleRightPart .personalizedTitleRightPartHeader {
-    font-weight: 800;
-    margin-top: 20px;
-  }
-  .personalizedTitleRightPart .personalizedTitleRightPartHeader:first-child {
-    margin-top: 0;
   }
 }
 
