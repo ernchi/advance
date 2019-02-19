@@ -1,4 +1,4 @@
-// Generates the header for the Articles
+/*Generates the header for the articles*/
 function genHeader(header) {
   var str = "<a href=\"#\">";
   str = str.concat(header);
@@ -6,6 +6,7 @@ function genHeader(header) {
   return str;
 }
 
+/*Generates the description for the articles*/
 function genDescription(description) {
   var str = description;
   return str;
@@ -36,25 +37,18 @@ $(document).ready(function() {
   }
 
   /*Generates all the articles randomly*/
-  var randomNumbersUsed = []; //
-  var randomNum = Math.floor(Math.random() * (+numberOfArticles - +0)) + +0;
-  $(".card-title-1").append(genHeader(articleHeader[randomNum]));
-  $(".card-text-1").append(articleDescription[randomNum]);
+  var randomNumbersUsed = []; // stores all the random numbers used
+  var randomNum = 0;
+  for (var i = 1; i <= 6; i++) {
+    randomNum = Math.floor(Math.random() * (+numberOfArticles - +0)) + +0;
+    
+    /*Check if the random number has already been used*/
+    /*If it has already been used, generate a new random number*/
 
-  $(".card-title-2").append(genHeader(articleHeader[randomNum]));
-  $(".card-text-2").append(articleDescription[randomNum]);
-
-  $(".card-title-3").append(genHeader(articleHeader[randomNum]));
-  $(".card-text-3").append(articleDescription[randomNum]);
-
-  $(".card-title-4").append(genHeader(articleHeader[randomNum]));
-  $(".card-text-4").append(articleDescription[randomNum]);
-
-  $(".card-title-5").append(genHeader(articleHeader[randomNum]));
-  $(".card-text-5").append(articleDescription[randomNum]);
-
-  $(".card-title-6").append(genHeader(articleHeader[randomNum]));
-  $(".card-text-6").append(articleDescription[randomNum]);
+    randomNumbersUsed.push(randomNum);
+    $(".card-title-" + i).append(genHeader(articleHeader[randomNum]));
+    $(".card-text-" + i).append(articleDescription[randomNum]);
+  }
 });
 
 jsonobj = {
