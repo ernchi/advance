@@ -14,7 +14,7 @@
   text-decoration: none;
 }
 
-/*Styling when hovering over the options in the menu*/
+/*Styling when hovering over the options in the navbar*/
 li:hover {
   background-color: #A0DACF;
   color: white;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Basically always applied */
 @media screen and (min-width: 1px)
 {
@@ -23,39 +24,49 @@
   background-color: #6EBBAB;
   border: 0px;
 }
+=======
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #6EBBAB;
+      border: 0px;
+    }
+>>>>>>> 75bf86268f40809ebff8f0724ba2f8ad0186ca12
 
-/*Altering the text in the navigation bar*/
-.navbar .nav li a {
-  font-size: 20px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  color: white;
-  text-decoration: none;
-}
+    /*Altering the text in the navigation bar*/
+    .navbar .nav li a {
+      font-size: 20px;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      color: white;
+      text-decoration: none;
+    }
 
-/*Styling when hovering over the options in the menu*/
-li:hover {
-  background-color: #A0DACF;
-  color: white;
-  text-decoration: none;
-}
+    /*Styling when hovering over the options in the menu*/
+    li:hover {
+      background-color: #A0DACF;
+      color: white;
+      text-decoration: none;
+    }
 
-/*Styling for the navbar toggle*/
-.navbar-toggle {
-  border: 0;
-  background-color: transparent;
-}
+    /*Styling for the navbar toggle*/
+    .navbar-toggle {
+      border: 0;
+      background-color: transparent;
+    }
 
-#nav:hover {
-  background-color: #A0DACF;
-}
+    #nav:hover {
+      background-color: #A0DACF;
+    }
 
-#nav:focus {
-  background: transparent;
-}
+    #nav:focus {
+      background: transparent;
+    }
 
-/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 450px}
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
 
+<<<<<<< HEAD
 /* Set gray background color and 100% height */
 .sidenav {
   padding-top: 20px;
@@ -68,14 +79,39 @@ li:hover {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   width: 100%;
 }
+=======
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    .Lucida {
+            font-family: cursive;
+            letter-spacing: 0.01px;
+    }
+    .cursive{
+      font-family: cursive;
+    }
 
-/* Set black background color, white text and some padding */
-footer {
-  background-color: #6EBBAB;
-  color: white;
-  padding: 15px;
-}
+    /*Adjusts the width of the main body of the webpage*/
+    .col-sm-8 {
+      color:teal;
+      font-family: cursive;
+      text-transform: capitalize;
+      width: 100%;
+    }
+>>>>>>> 75bf86268f40809ebff8f0724ba2f8ad0186ca12
 
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #6EBBAB;
+      color: white;
+      padding: 15px;
+    }
+   
+
+<<<<<<< HEAD
 
 /*Styling for survey block*/
 .surveyBlock {
@@ -86,18 +122,43 @@ footer {
   background-position: -25px -50px;
   background-image: url("http://cdn.strategyonline.ca/wp/wp-content/uploads/2015/12/shutterstock_253684528.jpg?w=640");
     background-size: 1000px;
+=======
+    /*Styling for survey block*/
+    .surveyBlock {
+      margin-left: auto;
+      margin-right: auto;
+       font-family: cursive;
 
-    background-repeat: no-repeat;
-  width: 900px;
-  height: 400px;
-  border: 10px solid #6ebbab;
-  
-  text-align: center;
-color:  #3466BD;
-  padding-left: 2em;
-  margin-bottom: 3em;
-}
+      background-position: -25px -50px;
+      background-image: url("http://cdn.strategyonline.ca/wp/wp-content/uploads/2015/12/shutterstock_253684528.jpg?w=640");
+       background-size: 1000px;
 
+       background-repeat: no-repeat;
+      width: 900px;
+      height: 400px;
+      border: 10px solid #6ebbab;
+     
+      text-align: center;
+    color:  #3466BD;
+      padding-left: 2em;
+      margin-bottom: 3em;
+    }
+>>>>>>> 75bf86268f40809ebff8f0724ba2f8ad0186ca12
+
+    .surveyBlock button {
+      position: relative;
+      transition: .5s ease;
+    }
+
+<<<<<<< HEAD
+=======
+    .surveyBlock h3 {
+      color: #3466BD;
+      font-size: 60px;
+      letter-spacing: 4px;
+      font-family: cursive;
+    }
+>>>>>>> 75bf86268f40809ebff8f0724ba2f8ad0186ca12
 .surveyBlock button {
   position: relative;
   transition: .5s ease;
@@ -160,7 +221,17 @@ color:  #3466BD;
   font-weight: lighter;
   color: black;
 
+<<<<<<< HEAD
 }
+=======
+    .box1, .box2, .box3 {
+    width: 29%;
+    height: 180px;
+    border: 2px solid #6ebbab;
+    margin: 8px 10px;
+    display: inline-block;
+    }
+>>>>>>> 75bf86268f40809ebff8f0724ba2f8ad0186ca12
 
 .box1, .box2, .box3 {
 width: 29%;
