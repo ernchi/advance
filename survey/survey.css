@@ -57,14 +57,10 @@ li:hover {
 /*Styling for the options bar*/
 [class*="options-"] {
   display: flex;
-<<<<<<< HEAD
   padding-right: 35px;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-=======
-
->>>>>>> 75bf86268f40809ebff8f0724ba2f8ad0186ca12
   justify-content: center;
   background-color: #6EBBAB;
 
@@ -73,8 +69,6 @@ li:hover {
 }
 
 /*Survey questions*/
-.row::after {
-}
 
 .questions header {
   background-color: #6EBBAB;
@@ -122,11 +116,6 @@ div.questions > div:nth-of-type(odd) {
 
 .response-btn input[type="radio"] {
   display: none;
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> 75bf86268f40809ebff8f0724ba2f8ad0186ca12
 }
 
 .response-btn label {
