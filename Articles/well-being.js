@@ -6,7 +6,13 @@ function genHeader(header) {
   return str;
 }
 
+function genDescription(description) {
+  var str = description;
+  return str;
+}
+
 $(document).ready(function() {
+  var numberOfArticles = 0; // number of articles
   articles = jsonobj["article"];
 
   /*
@@ -26,9 +32,29 @@ $(document).ready(function() {
     articleDescription.push(article["description"]);
     articleImg.push(article["img"]);
     articleLink.push(article["link"]);
+    numberOfArticles++;
   }
 
-  $(".card-title").append(genHeader(articleHeader[0]));
+  /*Generates all the articles randomly*/
+  var randomNumbersUsed = []; //
+  var randomNum = Math.floor(Math.random() * (+numberOfArticles - +0)) + +0;
+  $(".card-title-1").append(genHeader(articleHeader[randomNum]));
+  $(".card-text-1").append(articleDescription[randomNum]);
+
+  $(".card-title-2").append(genHeader(articleHeader[randomNum]));
+  $(".card-text-2").append(articleDescription[randomNum]);
+
+  $(".card-title-3").append(genHeader(articleHeader[randomNum]));
+  $(".card-text-3").append(articleDescription[randomNum]);
+
+  $(".card-title-4").append(genHeader(articleHeader[randomNum]));
+  $(".card-text-4").append(articleDescription[randomNum]);
+
+  $(".card-title-5").append(genHeader(articleHeader[randomNum]));
+  $(".card-text-5").append(articleDescription[randomNum]);
+
+  $(".card-title-6").append(genHeader(articleHeader[randomNum]));
+  $(".card-text-6").append(articleDescription[randomNum]);
 });
 
 jsonobj = {
