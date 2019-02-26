@@ -1,6 +1,8 @@
-/*Generates the header for the articles*/
-function genHeader(header) {
-  var str = "<a href=\"#\">";
+/*Generates the header and linkes to the articles*/
+function genHeader(header, link) {
+  var str = "<a href=\"";
+  str = str.concat(link);
+  str = str.concat("\" target=\"_blank\">");
   str = str.concat(header);
   str = str.concat("</a>");
   return str;
@@ -37,16 +39,21 @@ $(document).ready(function() {
   }
 
   /*Generates all the articles randomly*/
-  var randomNumbersUsed = []; // stores all the random numbers used
+  var numArray = []; // stores all the random numbers used
   var randomNum = 0;
-  for (var i = 1; i <= 6; i++) {
-    randomNum = Math.floor(Math.random() * (+numberOfArticles - +0)) + +0;
-    
-    /*Check if the random number has already been used*/
-    /*If it has already been used, generate a new random number*/
+  var bool = 0; // false
 
-    randomNumbersUsed.push(randomNum);
-    $(".card-title-" + i).append(genHeader(articleHeader[randomNum]));
+  for (var i = 1; i <= 6; i++) {
+    // generate random number
+    randomNum = Math.floor(Math.random() * (+numberOfArticles - +0)) + +0;
+    // if the number has been used already, generate a new number
+    while (i > 1 && numArray.indexOf(randomNum) != -1) {
+      randomNum = Math.floor(Math.random() * (+numberOfArticles - +0)) + +0;
+    }
+    // keep track of which numbers have been used
+    numArray.push(randomNum);
+
+    $(".card-title-" + i).append(genHeader(articleHeader[randomNum], articleLink[randomNum]));
     $(".card-text-" + i).append(articleDescription[randomNum]);
   }
 });
