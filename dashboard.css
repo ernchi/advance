@@ -45,17 +45,18 @@
       height: 100%;
     }
     .Lucida {
-            font-family: cursive;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
             letter-spacing: 0.01px;
+            font-size: 20px;
     }
     .cursive{
-      font-family: cursive;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
     }
 
     /*Adjusts the width of the main body of the webpage*/
     .col-sm-8 {
-      color:teal;
-      font-family: cursive;
+      color:#6ebbab;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
       text-transform: capitalize;
       width: 100%;
     }
@@ -67,12 +68,11 @@
       padding: 15px;
     }
 
-
     /*Styling for survey block*/
     .surveyBlock {
       margin-left: auto;
       margin-right: auto;
-       font-family: cursive;
+       font-family: "Trebuchet MS", Helvetica, sans-serif;
 
       background-position: -25px -50px;
       background-image: url("http://cdn.strategyonline.ca/wp/wp-content/uploads/2015/12/shutterstock_253684528.jpg?w=640");
@@ -98,7 +98,7 @@
       color: #3466BD;
       font-size: 60px;
       letter-spacing: 4px;
-      font-family: cursive;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
     }
 .surveyBlock button {
   position: relative;
@@ -106,10 +106,9 @@
 }
 
 .surveyBlock h3 {
-  color: #3466BD;
+  color: #FFFFFF;
   font-size: 60px;
   letter-spacing: 4px;
-  font-family: cursive;
 }
 
 .surveyBlock p {
@@ -172,7 +171,7 @@
     margin: 8px 10px;
     display: inline-block;
     }
-
+}
 .box1, .box2, .box3 {
 width: 29%;
 height: 180px;
@@ -182,17 +181,16 @@ display: inline-block;
 }
 
 .wellBeingArticles .box1 button{
-  visibility: hidden;
-
+visibility: visible;
 }
 
 .wellBeingArticles .box2 button{
-  visibility: hidden;
+visibility: visible;
 
 }
 
 .wellBeingArticles .box3 button{
-  visibility: hidden;
+visibility: visible;
 
 }
 
@@ -211,17 +209,17 @@ display: inline-block;
 
 
 .lifeSkillsArticles .box1 button{
-  visibility: hidden;
+visibility: visible;
 
 }
 
 .lifeSkillsArticles .box2 button{
-  visibility: hidden;
+visibility: visible;
 
 }
 
 .lifeSkillsArticles .box3 button{
-  visibility: hidden;
+visibility: visible;
 
 }
 

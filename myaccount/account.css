@@ -1,3 +1,70 @@
-* {
-  box-sizing: border-box;
-}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #6EBBAB;
+      border: 0px;
+    }
+
+    /*Altering the text in the navigation bar*/
+    .navbar .nav li a {
+      font-size: 20px;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      color: white;
+      text-decoration: none;
+    }
+
+    /*Styling when hovering over the options in the menu*/
+    li:hover {
+      background-color: #A0DACF;
+      color: white;
+      text-decoration: none;
+    }
+
+    /*Styling for the navbar toggle*/
+    .navbar-toggle {
+      border: 0;
+      background-color: transparent;
+    }
+
+    #nav:hover {
+      background-color: #A0DACF;
+    }
+
+    #nav:focus {
+      background: transparent;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    .Lucida {
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            letter-spacing: 0.01px;
+            font-size: 20px;
+    }
+    .cursive{
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+
+    /*Adjusts the width of the main body of the webpage*/
+    .col-sm-8 {
+      color:teal;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      text-transform: capitalize;
+      width: 100%;
+    }
+       /* Set black background color, white text and some padding */
+    footer {
+      background-color: #6EBBAB;
+      color: white;
+      padding: 15px;
+    }
+
