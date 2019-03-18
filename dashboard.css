@@ -49,9 +49,7 @@
             letter-spacing: 0.01px;
             font-size: 20px;
     }
-    .cursive{
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-    }
+ 
 
     /*Adjusts the width of the main body of the webpage*/
     .col-sm-8 {
@@ -75,7 +73,6 @@
        font-family: "Trebuchet MS", Helvetica, sans-serif;
 
       background-position: -25px -50px;
-      background-image: url("http://cdn.strategyonline.ca/wp/wp-content/uploads/2015/12/shutterstock_253684528.jpg?w=640");
        background-size: 1000px;
 
        background-repeat: no-repeat;
@@ -106,7 +103,7 @@
 }
 
 .surveyBlock h3 {
-  color: #FFFFFF;
+  color: #6EBBAB;
   font-size: 60px;
   letter-spacing: 4px;
 }
@@ -246,3 +243,21 @@ visibility: visible;
   }
   .row.content {height:auto;}
 }
+.ui-button {
+  background: #6EBBAB;
+  color: white;
+  border-color: #6EBBAB;
+  border-style: none;
+  height: 100px;
+  width: 200px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 50px;
+}
+
+.ui-button:hover {
+  background-color: #A0DACF;
+  color: white;
+  text-decoration: none;
+}
+
