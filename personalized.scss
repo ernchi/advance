@@ -1,4 +1,5 @@
-// NOTE - This is autocompiled SCSS
+// NOTE - This is a SCSS file (meaning it gets compiled into CSS and supports nesting, variables, etc.) 
+
 $weirdGreen: #6EBBAB;
 
 /* Always applied, only in a media query to keep it organized */
@@ -87,10 +88,12 @@ $weirdGreen: #6EBBAB;
             {
                 position: static;
                 display: block;
+                font-size: 18px;
             }
 
             .personalizedTitleRightPart
             {
+                font-size: 16px;
                 position: static;
                 display: block;
 
@@ -135,34 +138,31 @@ $weirdGreen: #6EBBAB;
                 font-size: 30px;
                 font-weight: 700;
                 margin: 0;
+                margin-bottom: 20px;
                 padding: 0;
-            }
-
-            .personalizedBoxContainerLink
-            {
-                color: black;
             }
 
             .personalizedBoxContainerLinkButton 
             {
+                -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
+                -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
+
                 background-color: $weirdGreen;
 
-                padding: 5px 10px;
+                padding: 10px;
+
                 border-radius: 15px;
 
-                width: fit-content;
-
-                margin: 10px 0;
-
                 color: white;
-
-                margin: 0;
-                margin-bottom: 20px;
-            }
+            }     
             
             .personalizedBoxContainerDescription
             {
+                // Todo - Figure out why we can't just style the middle element instead of this weird thing where we add a margin-bottom to the top element and a margin-top to the bottom element
+                margin-top: 20px; 
                 color: black;
+                font-size: 18px;
             }           
 
         }
@@ -171,11 +171,12 @@ $weirdGreen: #6EBBAB;
         {
             position: relative;
 
-            padding: 20px 0;
+            padding: 10px 0;
 
-            > img, > div 
+            > div 
             {
-                display: inline-block;
+                display: block;
+                font-size: 18px;
             }
 
             // Todo - Hide the picture if it gets too small (going to have to modify div positioning too, but that isn't hard)
@@ -184,25 +185,25 @@ $weirdGreen: #6EBBAB;
                 // Todo - FIgure out if there are better, more scalable versions of this 
                 width: 150px;
                 height: 200px;
+
+                display: none;
             }
 
             div 
             {
-                position: absolute;
-
-                top: 0;
-                left: 150px;
-                padding-left: 15px;
-
                 a 
                 {
+                    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+                    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+                    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+
                     color: white;
                     background-color: $weirdGreen;
 
                     padding: 10px;
                     border-radius: 10px;
 
-                    margin-bottom: 20px;
+                    margin-bottom: 0px;
                 }
 
                 .personalizedPictureContainerParagraph
@@ -232,6 +233,20 @@ $weirdGreen: #6EBBAB;
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 800px) 
 {
+    .middleColumn .personalizedPictureContainer > img 
+    {
+        display: inline-block;
+    }
+
+    .middleColumn .personalizedPictureContainer > div 
+    {
+        position: absolute;
+
+        top: 0;
+        left: 150px;
+        padding-left: 15px;
+    }
+
     .gridContainer 
     {
         // 15% width each 

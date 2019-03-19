@@ -63,8 +63,10 @@
   .middleColumn .titleInformationContainer .personalizedTitleLeftPart {
     position: static;
     display: block;
+    font-size: 18px;
   }
   .middleColumn .titleInformationContainer .personalizedTitleRightPart {
+    font-size: 16px;
     position: static;
     display: block;
   }
@@ -92,49 +94,43 @@
     font-size: 30px;
     font-weight: 700;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
   }
-  .middleColumn .personalizedBoxContainer .personalizedBoxContainerLink {
-    color: black;
-  }
   .middleColumn .personalizedBoxContainer .personalizedBoxContainerLinkButton {
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
     background-color: #6EBBAB;
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 15px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 10px 0;
     color: white;
-    margin: 0;
-    margin-bottom: 20px;
   }
   .middleColumn .personalizedBoxContainer .personalizedBoxContainerDescription {
+    margin-top: 20px;
     color: black;
+    font-size: 18px;
   }
   .middleColumn .personalizedPictureContainer {
     position: relative;
-    padding: 20px 0;
+    padding: 10px 0;
   }
-  .middleColumn .personalizedPictureContainer > img, .middleColumn .personalizedPictureContainer > div {
-    display: inline-block;
+  .middleColumn .personalizedPictureContainer > div {
+    display: block;
+    font-size: 18px;
   }
   .middleColumn .personalizedPictureContainer > img {
     width: 150px;
     height: 200px;
-  }
-  .middleColumn .personalizedPictureContainer div {
-    position: absolute;
-    top: 0;
-    left: 150px;
-    padding-left: 15px;
+    display: none;
   }
   .middleColumn .personalizedPictureContainer div a {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
     color: white;
     background-color: #6EBBAB;
     padding: 10px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .middleColumn .personalizedPictureContainer div .personalizedPictureContainerParagraph {
     margin-top: 30px;
@@ -156,6 +152,15 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 800px) {
+  .middleColumn .personalizedPictureContainer > img {
+    display: inline-block;
+  }
+  .middleColumn .personalizedPictureContainer > div {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    padding-left: 15px;
+  }
   .gridContainer {
     -ms-grid-columns: 2fr 14fr 2fr;
         grid-template-columns: 2fr 14fr 2fr;

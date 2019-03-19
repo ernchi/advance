@@ -152,92 +152,36 @@
 }
 
 
-.wellBeingArticles span {
-
+.wellBeingArticles span 
+{
   font-weight: lighter;
   color: black;
-
 }
 
-.lifeSkillsArticles span {
-
+.lifeSkillsArticles span
+{
   font-weight: lighter;
   color: black;
-
-    .box1, .box2, .box3 {
-    width: 29%;
-    height: 180px;
-    border: 2px solid #6ebbab;
-    margin: 8px 10px;
-    display: inline-block;
-    }
-
-.box1, .box2, .box3 {
-width: 29%;
-height: 180px;
-border: 2px solid #6ebbab;
-margin: 8px 10px;
-display: inline-block;
 }
 
-.wellBeingArticles .box1 button{
+.box1, .box2, .box3 
+{
+  width: 29%;
+  height: 180px;
+  border: 2px solid #6ebbab;
+  margin: 8px 10px;
+  display: inline-block;
+}
+
+.wellBeingArticles .box1 button, .wellBeingArticles .box2 button, .wellBeingArticles .box3 button, .lifeSkillsArticles .box1 button, .lifeSkillsArticles .box2 button, .lifeSkillsArticles .box3 button 
+{
   visibility: hidden;
-
 }
 
-.wellBeingArticles .box2 button{
-  visibility: hidden;
-
-}
-
-.wellBeingArticles .box3 button{
-  visibility: hidden;
-
-}
-
-.wellBeingArticles .box1:hover button{
-  visibility: visible;
-
-}
-
-.wellBeingArticles .box2:hover button{
+.wellBeingArticles .box1:hover button, .wellBeingArticles .box2:hover button, .wellBeingArticles .box3:hover button, .lifeSkillsArticles .box1:hover button, .lifeSkillsArticles .box2:hover button, .lifeSkillsArticles .box2:hover button
+{
   visibility: visible;
 }
-
-.wellBeingArticles .box3:hover button{
-  visibility: visible;
-}
-
-
-.lifeSkillsArticles .box1 button{
-  visibility: hidden;
-
-}
-
-.lifeSkillsArticles .box2 button{
-  visibility: hidden;
-
-}
-
-.lifeSkillsArticles .box3 button{
-  visibility: hidden;
-
-}
-
-.lifeSkillsArticles .box1:hover button{
-  visibility: visible;
-
-}
-
-.lifeSkillsArticles .box2:hover button{
-  visibility: visible;
-}
-
-.lifeSkillsArticles .box3:hover button{
-  visibility: visible;
-}
-
-
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
