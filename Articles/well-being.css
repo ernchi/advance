@@ -38,9 +38,21 @@ li:hover {
 /*Styling for the image cards for the articles*/
 img {
   max-width: 100%;
-  height: auto;
+  height: 250px; /*Set the height of the pictures to be equal*/
   width: auto;
 }
+
+/*When the desktop browser has a smaller size*/
+@media only screen and (max-width: 1200px) {
+  [class*="col-"] {
+    width: 80%;
+  }
+  img {
+    height: auto;
+  }
+}
+
+
 /*Setting the width of the title cards of each article*/
 [class*="col-"] {
   float: left;
