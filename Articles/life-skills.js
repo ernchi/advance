@@ -14,6 +14,17 @@ function genDescription(description) {
   return str;
 }
 
+/*Generates the images for the articles*/
+function genImage(img) {
+  var str = "<div class=\"card-h-100\">";
+  str = str.concat("<a href=\"#\">");
+  str = str.concat("<img class=\"card-img-top\" src=\"");
+  str = str.concat(img);
+  str = str.concat("\"></a>");
+  return str;
+}
+
+
 $(document).ready(function() {
   var numberOfArticles = 0; // number of articles
   articles = jsonobj["article"];
@@ -53,6 +64,7 @@ $(document).ready(function() {
     // keep track of which numbers have been used
     numArray.push(randomNum);
 
+    $(".card-" + i).append(genImage(articleImg[randomNum]));
     $(".card-title-" + i).append(genHeader(articleHeader[randomNum], articleLink[randomNum]));
     $(".card-text-" + i).append(articleDescription[randomNum]);
   }
@@ -64,42 +76,42 @@ jsonobj = {
 			"id": 1,
 			"header": "A Personal Plan for Managing Stress",
 			"description": "Learn about stress, triggers, stress management, and fill out your own worksheet to create a personal stress and self care management plan.",
-      "img": "",
+      "img": "../Articles/img/aap.jpg",
       "link": "https://www.aap.org/en-us/professional-resources/Reaching-Teens/Documents/Private/Personal_plan_handout.pdf"
 		},
 		{
 			"id": 2,
 			"header": "All About Problem Solving",
 			"description": "Problems suck. Find out more about problem solving strategies, and get some tips on what to do if a problem really can’t be fixed.",
-      "img": "",
+      "img": "../Articles/img/reachout.jpg",
       "link": "https://au.reachout.com/articles/a-step-by-step-guide-to-problem-solving"
 		},
     {
 			"id": 3,
 			"header": "Balancing Work and School",
 			"description": "Learn how to balance work and school life by prioritizing and using self care.",
-      "img": "",
+      "img": "../Articles/img/mentalhealthamerica.jpg",
       "link": "http://www.mentalhealthamerica.net/balancing-work-and-school"
 		},
     {
 			"id": 4,
 			"header": "Girls Health",
 			"description": "For girls: Learn about health and well-being, relationships (including family), bullying, illness, and disabilities.",
-      "img": "",
+      "img": "../Articles/img/girlshealth.jpg",
       "link": "http://girlshealth.gov/"
 		},
     {
 			"id": 5,
 			"header": "The Help Guide: Friendships",
 			"description": "Learn about the benefit of friendship, making new friends, strengthening current friendships, and being more social.",
-      "img": "",
+      "img": "../Articles/img/helpguide.jpg",
       "link": "https://www.helpguide.org/articles/relationships-communication/making-good-friends.htm"
 		},
     {
 			"id": 6,
 			"header": "Love is Respect",
 			"description": "Learn how to prevent and end abusive relationships through support and resources.",
-      "img": "",
+      "img": "../Articles/img/loveisrespect.jpg",
       "link": "https://www.loveisrespect.org/"
 		}
   ]
