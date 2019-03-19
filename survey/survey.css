@@ -58,11 +58,11 @@ li:hover {
 [class*="options-"] {
   display: flex;
   padding-right: 35px;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   justify-content: center;
   background-color: #6EBBAB;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 
   /*font color*/
   color: black;
@@ -112,6 +112,7 @@ div.questions > div:nth-of-type(odd) {
   position: relative;
   appearance: button;
   list-style-type:none;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .response-btn input[type="radio"] {
@@ -120,21 +121,29 @@ div.questions > div:nth-of-type(odd) {
 
 .response-btn label {
   padding: 10px;
-  border: 1px solid black;
+  border: none;
   cursor: pointer;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: #e2ffe4;
+}
+
+/*Color of the response buttons differ according to their background*/
+.response-btn label > div:first(odd) {
+  background-color: white;
+}
+
+.response-btn label > div:nth-of-type(odd) {
+  background-color: #A0DACF;
 }
 
 .response-btn label:hover {
- background: #BBB;
+ background: #6EBBAB;
  align-self: end;
 }
 
 .response-btn input[type="radio"]:checked + label,
 .Checked + label {
-  background: lightblue;
+  background: #6EBBAB;
   justify-content: center;
   align-content: center;
   justify-content: center;
