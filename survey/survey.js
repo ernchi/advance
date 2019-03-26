@@ -23,21 +23,33 @@ function genOptions(options){
 	return str;
 }
 
+var survey = {
+    dataType:'json',
+    type: 'GET',
+    url: "http://localhost:3000/surveys/1"
+};
+
 //https://www.w3schools.com/jquery/jquery_ajax_get_post.asp
 // Generates all the questions with the appropriate options bar
 $(document).ready(function() {
-	survey = jsonobj["survey"];
+	/*survey = jsonobj["survey"];*/
 	var curQuestionNum = 1;
 	var optionNum = 1;
-	for (var questionGroup of survey){
+	/*for (var questionGroup of survey){*/
 		questions = [];
 		options = [];
 
-		for(var option of questionGroup["options"]){
-			options.push(option["texts"]);
+		for (var i = 0; i < 4; i++) {
+			options.push(survey.options[i].optionstext);
 		}
-		for(var question of questionGroup["questions"]){
-			questions.push(question["QuestionName"]);
+
+		/*
+		for(var option of survey["options"]){
+			options.push(option["optiontext"]);
+		}
+		*/
+		for(var question of survey["questions"]){
+			questions.push(question["questiontext"]);
 		}
 
 		$(".questions").append("<div class=\"options-" + optionNum + "\"><div class=\"col-6\">");
@@ -51,8 +63,9 @@ $(document).ready(function() {
 			$(".questions").append(genQuestionHtml(questions[i], curQuestionNum));
 			curQuestionNum += 1;
 		}
-	}
+
 		$(".questions").append("<input class=\"ui-button\" id=\"submit_btn\" type=\"submit\" value=\"Submit\">");
+
 });
 
 $(function(){
@@ -87,6 +100,7 @@ $(function(){
 	});
 });
 
+/*
 jsonobj = {
 	"survey": [
 	{
@@ -225,3 +239,4 @@ jsonobj = {
 	}
 	]
 }
+*/
