@@ -23,53 +23,61 @@ function genOptions(options){
 	return str;
 }
 
-var survey = {
-    dataType:'json',
-    type: 'GET',
-    url: "http://localhost:3000/surveys/1"
-};
 
 //https://www.w3schools.com/jquery/jquery_ajax_get_post.asp
 // Generates all the questions with the appropriate options bar
+
+
 $(document).ready(function() {
+	$.ajax({
+   url: "https://surveyserverc4c.herokuapp.com/surveys/1",
+   type: "GET",
+   dataType: "json",
+   cache: true,
+   success: function(data){
+       console.log(data);
+			 applyData(data);
+   },
+   error: function(error){
+        console.log("Error:");
+        console.log(error);
+   }
+	})
 	/*survey = jsonobj["survey"];*/
-	var curQuestionNum = 1;
-	var optionNum = 1;
-	/*for (var questionGroup of survey){*/
-		questions = [];
-		options = [];
+	/* Reads the data from the survey object and prints the options and questions*/
+	var applyData = function(data){
+		var curQuestionNum = 1;
+		var optionNum = 1;
+		/*for (var questionGroup of survey){*/
+		var questionsArray = [];
+		var	optionsArray = [];
 
-		for (var i = 0; i < 4; i++) {
-			options.push(survey.options[i].optionstext);
-		}
+			for (var option of data.survey["options"]){
+				optionsArray.push(option["optiontext"]);
+			}
 
-		/*
-		for(var option of survey["options"]){
-			options.push(option["optiontext"]);
-		}
-		*/
-		for(var question of survey["questions"]){
-			questions.push(question["questiontext"]);
-		}
+			for(var question of data.survey["questions"]){
+				questionsArray.push(question["questiontext"]);
+			}
 
-		$(".questions").append("<div class=\"options-" + optionNum + "\"><div class=\"col-6\">");
-		for(var i = 0; i < options.length; i++){
-			$(".options-" + optionNum).append(genOptions(options[i]));
-		}
+			$(".questions").append("<div class=\"options-" + optionNum + "\"><div class=\"col-6\">");
+			for(var i = 0; i < optionsArray.length; i++){
+				$(".options-" + optionNum).append(genOptions(optionsArray[i]));
+			}
 
-		optionNum = optionNum + 1;
+			optionNum = optionNum + 1;
 
-		for(var i = 0; i < questions.length; i++){
-			$(".questions").append(genQuestionHtml(questions[i], curQuestionNum));
-			curQuestionNum += 1;
-		}
+			for(var i = 0; i < questionsArray.length; i++){
+				$(".questions").append(genQuestionHtml(questionsArray[i], curQuestionNum));
+				curQuestionNum += 1;
+			}
 
-		$(".questions").append("<input class=\"ui-button\" id=\"submit_btn\" type=\"submit\" value=\"Submit\">");
+			$(".questions").append("<input class=\"ui-button\" id=\"submit_btn\" type=\"submit\" value=\"Submit\">");
 
-});
+	}
 
-$(function(){
 	$("#submit_btn").click(function(){
+		console.log("button clicked");
 		var curQuestionNum = 1;
 		var noAns = 0;
 		for(var questionGroup of survey){
@@ -93,12 +101,15 @@ $(function(){
 			}
 		}
 		if(noAns>0){
-			alert("submitted! You did not answer " + noAns + " questions");
+			alert("Submitted! You did not answer " + noAns + " questions");
 		}else{
-			alert("Submitted! Good job my friend, you have done a service to humanity, and a service to yourself.")
+			alert("Submitted!")
 		}
+		window.location.href = '../personalized.html'
+		return;
 	});
 });
+
 
 /*
 jsonobj = {
