@@ -60,19 +60,18 @@ function clickFunction() {
       }
     }
   }
-  alert("Submitted!");
-  //window.location.href = '../personalized.html'
-  var txtFile = "/tmp/test.txt";
-  var file = new File(txtFile, "write");
-  var str = JSON.stringify(survey);
-  file.open();
-  file.writeline(str);
-  file.close();
+  
+    var str = JSON.stringify(survey);
+  window.location.href = "./personalized.html?survey="+encodeURIComponent(survey);
+  // var txtFile = "/tmp/test.txt";
+  // var file = new File(txtFile, "write");
+  //
+  // file.open();
+  // file.writeline(str);
+  // file.close();
   return;
 };
 
-
-//https://www.w3schools.com/jquery/jquery_ajax_get_post.asp
 // Generates all the questions with the appropriate options bar
 $(document).ready(function() {
   /* Get the survey object from the server */
