@@ -1,115 +1,128 @@
+// Survey object
+var survey;
+
 // Generates the questions
-function genQuestionHtml(question, num){
-	var str = "<div class=\"response-btn\">\r\n"
-	str = str.concat("  <div class=\"col-1\"></div>\r\n");
-	str = str.concat("  <div class=\"col-6\">Q" + num + ". " + question + "</div>\r\n");
-	for (var i = 1; i <= 4; i++) {
-		// must be of this format because of how submit button click works
-		var name = "btn" + i + "_" + num;
-		// add value tag
-		str = str.concat("  <div class=\"col-1\"><input type=\"radio\" id=\"" + name);
-		str = str.concat("\" name=\"Q" + num + "\"><label for=\"" + name + "\">" + i + "</label></div>\r\n");
-	}
-	str = str.concat("  <div class=\"col-1\"></div>\r\n");
-	str = str.concat("</div>\r\n");
-	return str;
+function genQuestionHtml(question, num) {
+  var str = "<div class=\"response-btn\">\r\n"
+  str = str.concat("  <div class=\"col-1\"></div>\r\n");
+  str = str.concat("  <div class=\"col-6\">Q" + num + ". " + question + "</div>\r\n");
+  for (var i = 1; i <= 4; i++) {
+    // must be of this format because of how submit button click works
+    var name = "btn" + i + "_" + num;
+    // add value tag
+    str = str.concat("  <div class=\"col-1\"><input type=\"radio\" id=\"" + name);
+    str = str.concat("\" name=\"Q" + num + "\"><label for=\"" + name + "\">" + i + "</label></div>\r\n");
+  }
+  str = str.concat("  <div class=\"col-1\"></div>\r\n");
+  str = str.concat("</div>\r\n");
+  return str;
 }
 
 // Generates options bar
-function genOptions(options){
-	var str = "    <div class=\"col-1\"><p>";
-	str = str.concat(options);
-	str = str.concat("</p></div>");
-	return str;
+function genOptions(options) {
+  var str = "    <div class=\"col-1\"><p>";
+  str = str.concat(options);
+  str = str.concat("</p></div>");
+  return str;
 }
+
+// Stores all the user responses into the survey object
+function clickFunction() {
+  // for (var questionGroup of survey["questions"]) {
+  //   for (var question of questionGroup["questions"]) {
+  //     var resp = "";
+  //     if ($('input[name=Q' + curQuestionNum + ']:checked').length == 1) {
+  //       id = $('input[name=Q' + curQuestionNum + ']:checked')[0].id
+  //       // get each char of the id corresponding to the response number which starts at index 3
+  //       i = 3;
+  //       while (id[i] != "_") {
+  //         resp += id[i];
+  //         i++;
+  //       }
+  //       resp = parseInt(resp);
+  //     } else {
+  //       resp = -1;
+  //       noAns++;
+  //     }
+  //     curQuestionNum++;
+  //     question["response"] = resp;
+  //   }
+  // }
+
+  // Gets all the questions
+  var questions =  $('.response-btn');
+  for (var j = 0; j < questions.length; j++) {
+    var options = questions[j].getElementsByClassName("col-1");
+    // Loops through all the options and stores the responses
+    for (var i = 1; i < options.length - 1; i++) {
+      if (options[i].getElementsByTagName("input")[0].checked) {
+        survey["questions"][j]["response"] = i;
+      }
+    }
+  }
+  alert("Submitted!");
+  //window.location.href = '../personalized.html'
+  var txtFile = "/tmp/test.txt";
+  var file = new File(txtFile, "write");
+  var str = JSON.stringify(survey);
+  file.open();
+  file.writeline(str);
+  file.close();
+  return;
+};
 
 
 //https://www.w3schools.com/jquery/jquery_ajax_get_post.asp
 // Generates all the questions with the appropriate options bar
-
-
 $(document).ready(function() {
-	$.ajax({
-   url: "https://surveyserverc4c.herokuapp.com/surveys/1",
-   type: "GET",
-   dataType: "json",
-   cache: true,
-   success: function(data){
-       console.log(data);
-			 applyData(data);
-   },
-   error: function(error){
-        console.log("Error:");
-        console.log(error);
-   }
-	})
-	/*survey = jsonobj["survey"];*/
-	/* Reads the data from the survey object and prints the options and questions*/
-	var applyData = function(data){
-		var curQuestionNum = 1;
-		var optionNum = 1;
-		/*for (var questionGroup of survey){*/
-		var questionsArray = [];
-		var	optionsArray = [];
+  /* Get the survey object from the server */
+  $.ajax({
+    url: "https://surveyserverc4c.herokuapp.com/surveys/1",
+    type: "GET",
+    dataType: "json",
+    cache: true,
+    success: function(data) {
+      console.log(data);
+      applyData(data);
+    },
+    error: function(error) {
+      console.log("Error:");
+      console.log(error);
+    }
+  })
+  /* Reads the data from the survey object and prints the options and questions*/
+  var applyData = function(data) {
+    var curQuestionNum = 1;
+    var optionNum = 1;
+    /*for (var questionGroup of survey){*/
+    var questionsArray = [];
+    var optionsArray = [];
+    survey = data.survey;
 
-			for (var option of data.survey["options"]){
-				optionsArray.push(option["optiontext"]);
-			}
+    for (var option of data.survey["options"]) {
+      optionsArray.push(option["optiontext"]);
+    }
 
-			for(var question of data.survey["questions"]){
-				questionsArray.push(question["questiontext"]);
-			}
+    for (var question of data.survey["questions"]) {
+      questionsArray.push(question["questiontext"]);
+    }
 
-			$(".questions").append("<div class=\"options-" + optionNum + "\"><div class=\"col-6\">");
-			for(var i = 0; i < optionsArray.length; i++){
-				$(".options-" + optionNum).append(genOptions(optionsArray[i]));
-			}
+    $(".questions").append("<div class=\"options-" + optionNum + "\"><div class=\"col-6\">");
+    for (var i = 0; i < optionsArray.length; i++) {
+      $(".options-" + optionNum).append(genOptions(optionsArray[i]));
+    }
 
-			optionNum = optionNum + 1;
+    optionNum = optionNum + 1;
 
-			for(var i = 0; i < questionsArray.length; i++){
-				$(".questions").append(genQuestionHtml(questionsArray[i], curQuestionNum));
-				curQuestionNum += 1;
-			}
+    for (var i = 0; i < questionsArray.length; i++) {
+      $(".questions").append(genQuestionHtml(questionsArray[i], curQuestionNum));
+      curQuestionNum += 1;
+    }
 
-			$(".questions").append("<input class=\"ui-button\" id=\"submit_btn\" type=\"submit\" value=\"Submit\">");
+    $(".questions").append("<input class=\"ui-button\" id=\"submit_btn\" type=\"button\" value=\"Submit\" onclick=\"clickFunction()\">");
+  }
 
-	}
-
-	$("#submit_btn").click(function(){
-		console.log("button clicked");
-		var curQuestionNum = 1;
-		var noAns = 0;
-		for(var questionGroup of survey){
-			for(var question of questionGroup["questions"]){
-				var resp = "";
-				if($('input[name=Q' + curQuestionNum +  ']:checked').length==1){
-					id = $('input[name=Q' + curQuestionNum + ']:checked')[0].id
-					// get each char of the id coresponding to the response number which starts at index 3
-					i = 3;
-					while(id[i]!="_"){
-						resp += id[i];
-						i++;
-					}
-					resp = parseInt(resp);
-				}else{
-					resp = -1;
-					noAns++;
-				}
-				curQuestionNum++;
-				question["response"] = resp;
-			}
-		}
-		if(noAns>0){
-			alert("Submitted! You did not answer " + noAns + " questions");
-		}else{
-			alert("Submitted!")
-		}
-		window.location.href = '../personalized.html'
-		return;
-	});
 });
-
 
 /*
 jsonobj = {
