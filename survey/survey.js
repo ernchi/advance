@@ -28,27 +28,6 @@ function genOptions(options) {
 
 // Stores all the user responses into the survey object
 function clickFunction() {
-  // for (var questionGroup of survey["questions"]) {
-  //   for (var question of questionGroup["questions"]) {
-  //     var resp = "";
-  //     if ($('input[name=Q' + curQuestionNum + ']:checked').length == 1) {
-  //       id = $('input[name=Q' + curQuestionNum + ']:checked')[0].id
-  //       // get each char of the id corresponding to the response number which starts at index 3
-  //       i = 3;
-  //       while (id[i] != "_") {
-  //         resp += id[i];
-  //         i++;
-  //       }
-  //       resp = parseInt(resp);
-  //     } else {
-  //       resp = -1;
-  //       noAns++;
-  //     }
-  //     curQuestionNum++;
-  //     question["response"] = resp;
-  //   }
-  // }
-
   // Gets all the questions
   var questions =  $('.response-btn');
   for (var j = 0; j < questions.length; j++) {
@@ -56,23 +35,17 @@ function clickFunction() {
     // Loops through all the options and stores the responses
     for (var i = 1; i < options.length - 1; i++) {
       if (options[i].getElementsByTagName("input")[0].checked) {
-        survey["questions"][j]["response"] = i;
+        survey["questions"][j]["response"] = i - 1;
       }
     }
   }
-  
     var str = JSON.stringify(survey);
-  window.location.href = "./personalized.html?survey="+encodeURIComponent(survey);
-  // var txtFile = "/tmp/test.txt";
-  // var file = new File(txtFile, "write");
-  //
-  // file.open();
-  // file.writeline(str);
-  // file.close();
+    localStorage.setItem('surveyResp', str);
+  window.location.href = "./personalized.html";
   return;
 };
 
-// Generates all the questions with the appropriate options bar
+/* Generates all the questions with the appropriate options bar */
 $(document).ready(function() {
   /* Get the survey object from the server */
   $.ajax({
